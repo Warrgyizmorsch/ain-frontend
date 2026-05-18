@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\MasterController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\WalletController;
 use Illuminate\Support\Facades\Route;
@@ -54,9 +53,6 @@ Route::get('/test-broadcast', function () {
 });
 
 
-
-Route::post('/sendsms', [ChatController::class, 'send'])->name('send-whatsapp');
-Route::get('/chat/{phone?}', [ChatController::class, 'showChat'])->name('chat');
 Route::post('/writer-login', [UserController::class, 'Login']);
 Route::post('/neworder-fromhome', [LeadsController::class, 'FrontEndLeads'])->name('neworder.create');
 Route::post('/placeNewOrder', [LeadsController::class, 'FrontEndLeadsNew']);

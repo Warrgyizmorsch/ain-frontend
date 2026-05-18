@@ -3,7 +3,8 @@
         <div class="animated-border-wrapper">
             <div class="blog-card">
                 <a href="{{ url('/blog', $blog->slug) }}">
-                    <img src="{{ asset($blog->images) }}" alt="{{ $blog->tittle }}">
+                    <img src="{{ config('app.backend_url') . '/' . ltrim($blog->images, '/') }}"
+                        yalt="{{ $blog->tittle }}">
                 </a>
                 <div class="p-3">
                     <div class="blog-meta">

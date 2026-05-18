@@ -347,6 +347,11 @@
         {{ session('success') }}
     </div>
 @endif
+@if(session('error'))
+    <div class="alert alert-danger" style="background: #f8d7da; color: #842029; padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #f5c2c7;">
+        {{ session('error') }}
+    </div>
+@endif
 @if($errors->any())
     <div class="alert alert-danger" style="background: #f8d7da; color: #842029; padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #f5c2c7;">
         <ul class="mb-0" style="list-style-type: none; padding-left: 0;">

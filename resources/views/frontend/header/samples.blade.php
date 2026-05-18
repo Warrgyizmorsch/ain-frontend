@@ -51,7 +51,9 @@
 													<div class="text">{!! substr(strip_tags($sample->content), 0, 100) !!}...</div>
 
 												    <div class="image" style="height:151px">
-														<a a href="{{ url('/sample', $sample->slug) }}" ><img src="{{ asset($sample->images) }}" alt=""></a>
+														<a href="{{ url('/sample', $sample->slug) }}">
+															<img src="{{ config('app.backend_url') . '/' . ltrim($sample->images, '/') }}" alt="">
+														</a>
 													</div>
 												</div>
 											</div>

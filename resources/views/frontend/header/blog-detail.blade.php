@@ -449,7 +449,8 @@
                                             <div class="col-lg-12 col-md-12 col-sm-12">
                                                 <div class="inner-column">
                                                     <div class="image">
-                                                        <img src="{{$data['blog']['images']}}" alt="{{$data['blog']['tittle']}}" />
+                                                        <img src="{{ config('app.backend_url') . '/' . ltrim($data['blog']['images'], '/') }}"
+                                                            alt="{{ $data['blog']['tittle'] }}" />
                                                     </div>
 
                                                     <span class="blog-date">

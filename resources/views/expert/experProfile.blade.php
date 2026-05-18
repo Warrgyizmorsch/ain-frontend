@@ -434,8 +434,10 @@ hr{
                 <div class="profile-header">
                     <div class="img-head">
                         
-                      <img src="{{ $expert->image ?? '/assets/media/avatars/blank.png' }}" 
-                   alt="{{ $expert->name }}" />
+                      <img src="{{ $expert->image 
+                        ? config('app.backend_url') . '/' . ltrim($expert->image, '/') 
+                        : asset('assets/media/avatars/blank.png') }}" 
+                        alt="{{ $expert->name }}" />
 
                     </div>
                     <h1>{{$expert->name}}</h1>
@@ -535,8 +537,10 @@ hr{
                 <div class="profile-card">
                     <div class="profile-header1">
                         <div class="profile-top">
-                        <img src="{{$expert->image}}"
-                            alt="{{$expert->name}}" />
+                        <img src="{{ $expert->image 
+                            ? config('app.backend_url') . '/' . ltrim($expert->image, '/') 
+                            : asset('assets/media/avatars/blank.png') }}" 
+                            alt="{{ $expert->name }}" />
                             <div class="name-rating">
                         <h5>{{$expert->name}}</h5>
                             @php

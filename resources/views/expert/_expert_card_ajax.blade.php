@@ -10,7 +10,10 @@
                 <div class="image-outer">
                     <div class="image">
                         <a href="writers/{{$expert->slug}}">
-                            <img src="{{ $expert->image ? asset($expert->image) : asset('assets/media/avatars/blank.png') }}" alt="{{$expert->name}}" />
+                            <img src="{{ $expert->image 
+                                ? config('app.backend_url') . '/' . ltrim($expert->image, '/') 
+                                : asset('assets/media/avatars/blank.png') }}" 
+                                alt="{{$expert->name}}" />
                         </a>
                     </div>
                 </div>

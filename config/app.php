@@ -187,4 +187,6 @@ return [
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
         ])->toArray(),
 
+    'backend_url' => env('BACKEND_URL', 'http://localhost:8000'),
+
 ];
