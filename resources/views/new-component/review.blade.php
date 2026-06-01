@@ -16,79 +16,92 @@
 
     <div class="ts-grid">
       <!-- LEFT / PROFILE -->
+      @php
+          $expert = $data['expert']->first();
+          $averageRating = $averageRating ?? 4.9;
+      @endphp
+
+      @if($expert)
       <div class="ts-card ts-profile">
         <div class="ts-profileHead">
-          <div class="ts-avatarRing">
-            <img
-              class="ts-avatar"
-              src="https://i.pravatar.cc/150?u=peter"
-              alt="Peter Lewis"
-              loading="lazy"
-            />
-          </div>
-
-          <div class="ts-profileMeta">
-            <div class="ts-nameRow">
-              <h3 class="ts-name">Peter Lewis</h3>
-              <span class="ts-check" title="Verified">
-                <i class="fa-solid fa-circle-check"></i>
-              </span>
+            <div class="ts-avatarRing">
+                <a href="{{ url('writers/' . $expert->slug) }}">
+                    <img
+                        class="ts-avatar"
+                        src="{{ $expert->image 
+                            ? config('app.backend_url') . '/' . ltrim($expert->image, '/') 
+                            : asset('assets/media/avatars/blank.png') }}"
+                        alt="{{ $expert->name }}"
+                        loading="lazy"
+                    />
+                </a>
             </div>
 
-            <p class="ts-role">Academic Research Specialist</p>
+            <div class="ts-profileMeta">
+                <div class="ts-nameRow">
+                    <h3 class="ts-name">{{ $expert->name }}</h3>
+                    <span class="ts-check" title="Verified">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </span>
+                </div>
 
-            <span class="ts-verified">
-              <i class="fa-solid fa-badge-check"></i>
-              Verified Expert
-            </span>
-          </div>
+                <p class="ts-role">Academic Research Specialist</p>
+
+                <span class="ts-verified">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Verified Expert
+                </span>
+            </div>
         </div>
 
         <p class="ts-bio">
-          8+ years helping students complete high-quality research, dissertations,
-          and assignments — on time, every time.
+            {!! Str::limit(strip_tags($expert->content, '<strong><em>'), 120, '...') !!}
         </p>
 
         <div class="ts-stats">
-          <div class="ts-stat">
-            <div class="ts-statIcon">
-              <i class="fa-regular fa-file-lines"></i>
+            <div class="ts-stat">
+                <div class="ts-statIcon">
+                    <i class="fa-regular fa-file-lines"></i>
+                </div>
+                <div class="ts-statNum">{{ $expert->finish_order }}</div>
+                <div class="ts-statLbl">Completed</div>
             </div>
-            <div class="ts-statNum">1023</div>
-            <div class="ts-statLbl">Completed</div>
-          </div>
 
-          <div class="ts-stat">
-            <div class="ts-statIcon">
-              <i class="fa-regular fa-clock"></i>
+            <div class="ts-stat">
+                <div class="ts-statIcon">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+                <div class="ts-statNum">{{ $expert->inprogress_order }}</div>
+                <div class="ts-statLbl">In Progress</div>
             </div>
-            <div class="ts-statNum">76</div>
-            <div class="ts-statLbl">In Progress</div>
-          </div>
 
-          <div class="ts-stat">
-            <div class="ts-statIcon">
-              <i class="fa-solid fa-star"></i>
+            <div class="ts-stat">
+                <div class="ts-statIcon">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="ts-statNum">{{ $averageRating }}</div>
+                <div class="ts-statLbl">Rating</div>
             </div>
-            <div class="ts-statNum">4.9</div>
-            <div class="ts-statLbl">328 Reviews</div>
-          </div>
         </div>
 
         <div class="ts-badge">
-          <i class="fa-solid fa-graduation-cap"></i>
-          500+ UK Students Served
+            <i class="fa-solid fa-graduation-cap"></i>
+            {{ $expert->finish_order }}+ Students Served
         </div>
 
         <div class="ts-actions">
-          <button class="ts-btn ts-btnPrimary">
-            <i class="fa-solid fa-user-pen"></i> Hire Writer
-          </button>
-          <button class="ts-btn ts-btnOutline">
-            <i class="fa-regular fa-id-card"></i> About Writer
-          </button>
+            <button class="ts-btn ts-btnPrimary"
+                    onclick="window.location.href='{{ url('/upload-your-assignment') }}'">
+                <i class="fa-solid fa-user-pen"></i> Hire Writer
+            </button>
+
+            <button class="ts-btn ts-btnOutline"
+                    onclick="window.location.href='{{ url('writers/' . $expert->slug) }}'">
+                <i class="fa-regular fa-id-card"></i> About Writer
+            </button>
         </div>
       </div>
+      @endif
 
       <!-- RIGHT / TOP ROW -->
       <div class="ts-card ts-review">
@@ -432,21 +445,91 @@
       <div class="ts-card ts-cta">
         <h3 class="ts-ctaTitle">Original. Confidential.<br />On-time.</h3>
         <p class="ts-ctaText">Professional assignment help you can trust.</p>
-        <button class="ts-ctaBtn">
+        {{-- <button class="ts-ctaBtn">
           <i class="fa-solid fa-bolt"></i> Order Now
-        </button>
+        </button> --}}
+
+        <button type="button"
+        class="ts-ctaBtn"
+        data-bs-toggle="modal"
+        data-bs-target="#quoteModal">
+  <i class="fa-solid fa-bolt"></i> Order Now
+</button>
       </div>
     </div>
 
-    <div class="ts-loadWrap">
+    {{-- <div class="ts-loadWrap">
       <button class="ts-loadBtn">
         <i class="fa-solid fa-rotate"></i> Load More
       </button>
-    </div>
+    </div> --}}
   </div>
 </section>
 
+<div class="modal fade ain-quote-modal" id="quoteModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content ain-modal-content border-0 p-0 overflow-hidden">
+                <div class="d-flex">
+
+                    {{-- LEFT: SIRF IMAGE --}}
+                    <div class="ain-modal-left">
+                        <img src="{{ asset('assets/media/modal/bg.webp') }}" alt="Expert Assignment Help">
+                    </div>
+
+                    {{-- RIGHT: SAME FORM --}}
+                    <div class="ain-modal-right">
+                        <button type="button" class="ain-close-btn" data-bs-dismiss="modal" aria-label="Close">×</button>
+
+                        <div class="ain-form-head">
+                            <h3>Get Free <span>Assignment Quote</span> Instantly</h3>
+                            <div class="ain-divider">Fill the form and chat with our experts now.</div>
+                        </div>
+
+                        @include('components.pricing-card', ['dontShowInModal' => true])
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 <style>
+    #quoteModal .modal-dialog     { max-width: 1100px !important; }
+    .ain-modal-content            { border-radius: 18px; overflow: hidden; max-height: 92vh; border: none; }
+
+    /* LEFT — sirf image */
+    .ain-modal-left               { width: 48%; flex-shrink: 0; overflow: hidden; }
+    .ain-modal-left img           { width: 100%; height: 100%; display: block; }
+
+    /* RIGHT */
+    .ain-modal-right              { flex: 1; background: #fff; width: 58%; padding: 25px; position: relative; overflow-y: auto; }
+
+    .ain-close-btn {
+        position: absolute; top: 12px; right: 14px;
+        width: 28px; height: 28px; border-radius: 50%;
+        background: #3a1fa8; border: none; cursor: pointer;
+        color: #fff; font-size: 16px; line-height: 1;
+        display: flex; align-items: center; justify-content: center; z-index: 10;
+    }
+
+    .ain-form-head h3             { font-size: 22px !important; font-weight: 800; text-align: center; line-height: 1.25; margin-bottom: 4px; color: #1a1a2e; }
+    .ain-form-head h3 span        { color: #5b48d9; }
+    .ain-divider {
+        text-align: center; font-size: 12.5px; color: #aaa;
+        margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
+    }
+    .ain-divider::before,
+    .ain-divider::after           { content: ''; flex: 1; height: 1px; background: #eee; }
+
+    /* mobile */
+    @media (max-width: 991px) {
+        #quoteModal .modal-dialog { max-width: 94% !important; margin: 15px auto; }
+        .ain-modal-left           { display: none !important; }
+        .ain-modal-right          { width: 100% !important; }
+    }
+    .ain-modal-content {
+        background: #f8f9ff;
+    }
 /* SECTION BG (same look) */
 .ts-section {
   position: relative;

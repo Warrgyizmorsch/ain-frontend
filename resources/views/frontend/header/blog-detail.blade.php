@@ -26,25 +26,25 @@
     }
 
     h1 {
-        font-size: 45px;
+        font-size: 38px;
         font-weight: 700;
         line-height: 1.25;
         color: #000;
     }
 
     h2 {
-        font-size: 31px !important;
+        font-size: 30px !important;
         line-height: 1.35;
         color: #000;
     }
 
     h3 {
-        font-size: 20px !important;
+        font-size: 25px !important;
         color: #000;
     }
 
     h4 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     h2 span {
@@ -139,6 +139,24 @@
     .blog-detail-banner-section .content-box {
         position: relative;
         max-width: 100%;
+    }
+
+    .blog-content ul {
+        list-style: disc outside !important;
+        padding-left: 28px !important;
+        margin: 12px 0 20px !important;
+    }
+
+    .blog-content ol {
+        list-style: decimal outside !important;
+        padding-left: 28px !important;
+        margin: 12px 0 20px !important;
+    }
+
+    .blog-content li {
+        display: list-item !important;
+        list-style-position: outside !important;
+        margin-bottom: 8px !important;
     }
 
     .banner-section-three .content-column .inner-column {
@@ -246,187 +264,17 @@
             rgba(0, 0, 0, 0.25) 0px 20px 40px -25px;
     }
 
-    /* Blog Content UI */
-    .blog-content {
-        color: #000 !important;
-        font-size: 17px;
-        line-height: 1.8;
-        font-weight: 400;
-        word-break: break-word;
+    /* .sidebar-sticky-box {
+    position: sticky;
+    top: 120px;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 991px) {
+    .sidebar-sticky-box {
+        position: static;
     }
-
-    .blog-content p {
-        color: #000 !important;
-        font-size: 17px !important;
-        line-height: 1.8 !important;
-        font-weight: 400 !important;
-        margin-bottom: 16px !important;
-        text-align: justify;
-    }
-
-    .blog-content h1 {
-        color: #000 !important;
-        font-size: 36px !important;
-        line-height: 1.35 !important;
-        font-weight: 700 !important;
-        margin: 28px 0 16px !important;
-    }
-
-    .blog-content h2 {
-        color: #000 !important;
-        font-size: 28px !important;
-        line-height: 1.4 !important;
-        font-weight: 700 !important;
-        margin: 26px 0 14px !important;
-    }
-
-    .blog-content h3 {
-        color: #000 !important;
-        font-size: 22px !important;
-        line-height: 1.45 !important;
-        font-weight: 600 !important;
-        margin: 22px 0 12px !important;
-    }
-
-    .blog-content strong,
-    .blog-content b {
-        color: #000 !important;
-        font-weight: 600 !important;
-    }
-
-    .blog-content span {
-        color: inherit;
-    }
-
-    .blog-content a {
-        color: #2f26d9 !important;
-        text-decoration: none !important;
-    }
-
-    .blog-content ul,
-    .blog-content ol {
-        margin: 18px 0 24px 0 !important;
-        padding-left: 24px !important;
-    }
-
-    .blog-content ul li,
-    .blog-content ol li {
-        color: #222 !important;
-        font-size: 16px !important;
-        line-height: 1.7 !important;
-        font-weight: 400 !important;
-        margin-bottom: 8px !important;
-        padding-left: 4px !important;
-    }
-
-    .blog-content ul li {
-        list-style-type: disc !important;
-    }
-
-    .blog-content ol li {
-        list-style-type: decimal !important;
-    }
-
-    .blog-content li::marker {
-        color: #8a8a8a !important;
-        font-size: 13px !important;
-    }
-
-    .blog-content li p,
-    .blog-content li span,
-    .blog-content li strong,
-    .blog-content li b {
-        font-size: 16px !important;
-        line-height: 1.7 !important;
-        color: #222 !important;
-        font-weight: 400 !important;
-        margin: 0 !important;
-    }
-
-	.blog-content span {
-		font-size: 17px !important;
-		line-height: 1.8 !important;
-		color: #000 !important;
-	}
-
-    .blog-date {
-        color: #555;
-        font-size: 14px;
-        margin-bottom: 15px;
-        display: inline-block;
-    }
-
-    @media only screen and (max-width: 991px) {
-        .content-side {
-            margin-bottom: 30px;
-        }
-
-        .sidebar-side {
-            margin-top: 20px;
-        }
-
-        .sticky-top {
-            top: 0;
-        }
-    }
-
-    @media only screen and (max-width: 767px) {
-        .sidebar-page-container.style-two {
-            padding-top: 20px;
-        }
-
-        h1 {
-            font-size: 28px !important;
-            line-height: 1.35 !important;
-        }
-
-        .blog-content {
-            font-size: 15px !important;
-            line-height: 1.75 !important;
-        }
-
-        .blog-content p {
-            font-size: 15px !important;
-            line-height: 1.75 !important;
-            text-align: left !important;
-        }
-
-        .blog-content h1 {
-            font-size: 26px !important;
-        }
-
-        .blog-content h2 {
-            font-size: 23px !important;
-        }
-
-        .blog-content h3 {
-            font-size: 19px !important;
-        }
-
-        .blog-content ul,
-        .blog-content ol {
-            padding-left: 20px !important;
-        }
-
-        .blog-content ul li,
-        .blog-content ol li,
-        .blog-content li p,
-        .blog-content li span,
-        .blog-content li strong,
-        .blog-content li b {
-            font-size: 15px !important;
-            line-height: 1.7 !important;
-        }
-
-        .links-widget {
-            padding: 10px !important;
-        }
-
-        .blog-cat a {
-            font-size: 13px !important;
-            padding: 8px 10px !important;
-        }
-    }
+} */
 </style>
 
 <div class="row clearfix">
@@ -440,11 +288,11 @@
 
                         <div class="content-side col-lg-8 col-md-12 col-sm-12">
 
-                            <h1 style="font-size:2.5rem;">{{$data['blog']['tittle']}}</h1>
+                            <h1>{{$data['blog']['tittle']}}</h1>
 
                             <div class="blog-detail">
                                 <div class="inner-box">
-                                    <div class="blockquote-box mt-0">
+                                    <div class="blockquote-box">
                                         <div class="row clearfix">
                                             <div class="col-lg-12 col-md-12 col-sm-12">
                                                 <div class="inner-column">
@@ -455,6 +303,9 @@
 
                                                     <span class="blog-date">
                                                         {{ \Carbon\Carbon::parse($data['blog']['created_at'])->format('F j, Y') }}
+                                                    </span>
+                                                    <span class="blog-author">
+                                                        by {{ $data['author']->name ?? 'Admin' }}
                                                     </span>
                                                 </div>
                                             </div>
@@ -488,17 +339,17 @@
                         </div>
 
                         <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
-                            <aside>
+                            <div class="sidebar-sticky-box">
                                 @include('components.pricing-card')
-
-                                <div class="sidebar-widget links-widget">
-                                    <a href="https://api.whatsapp.com/send/?phone=%2B447826233106&text&type=phone_number&app_absent=0">
-                                        <div class="row sticky">
-                                            <div class="col-12">
-                                                <img class="banner-img" src="{{ asset('/images/whatsapp-order-now.webp') }}" alt="">
+                                    <div class="sidebar-widget links-widget">
+                                        <a href="https://api.whatsapp.com/send/?phone=%2B447826233106&text&type=phone_number&app_absent=0">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <img class="banner-img" src="{{ asset('/images/whatsapp-order-now.webp') }}" alt="">
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
                                 </div>
 
                                 <div class="sidebar-widget links-widget">

@@ -1,6 +1,6 @@
 <div class="review-container">
     <!-- Google -->
-    <a href="https://www.google.com/search?kgmid=/g/11h5lkq603&hl=en-IN&q=Assignment+In+Need&shndl=30&shem=lcuae&source=sh/x/loc/osrp/m5/1&kgs=a5fd0582696972f7"
+    <a href="https://www.google.com/search?kgmid=/g/11h5lkq603&hl=en-IN&q=Assignment+In+Need&shndl=30&shem=lcuae&source=sh/x/loc/osrp/m5/1&kgs=a5fd0582696972f7" rel="nofollow noopener noreferrer" target="_blank"
         style="color: black; text-decoration: none;">
         <div class="review-box google-review">
             <img src="/assets/media/layout/google_logo.png" alt="Google Logo" class="review-logo">
@@ -19,7 +19,7 @@
     </a>
 
     <!-- Assignment In Need -->
-    <a href="/review" style="color: black; text-decoration: none;">
+    <a href="/review" style="color: black; text-decoration: none;" rel="nofollow noopener noreferrer" target="_blank">
         <div class="review-box ain-review">
             <img src="/assets/media/layout/assignment_logo.webp" alt="Assignment In Need Logo" class="review-logo">
             <div>
@@ -37,7 +37,7 @@
     </a>
 
     <!-- Trustpilot -->
-    <a href="https://www.trustpilot.com/review/assignnmentinneed.com" style="color: black; text-decoration: none;">
+    <a href="https://www.trustpilot.com/review/assignnmentinneed.com" rel="nofollow noopener noreferrer" target="_blank" style="color: black; text-decoration: none;">
         <div class="review-box trustpilot-review">
             <img src="/assets/media/layout/trustpilot_logo.svg" alt="Trustpilot Logo" class="review-logo">
             <div>

@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Sample;
 use App\Models\Blog;
 use App\Models\Add;
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Storage; 
 use App\Models\Order;
 use App\Models\User;
 use App\Models\Leads;
@@ -407,6 +407,11 @@ class HomeController extends Controller
         // $data['blog'] = Blog::find($id);
 
         $data['blog'] = Blog::where('slug', $slug)->first();
+            if (!$data['blog']) {
+                abort(404);
+            }
+
+        $data['author'] = DB::table('author')->where('id', $data['blog']->author_id)->first();
         $data['recent_post'] = Blog::where('type', 'blog')->latest()->take(5)->get();
 
         // Check if the blog exists
@@ -439,10 +444,7 @@ class HomeController extends Controller
             ['name' => 'Assignment In Need- Assignment Writing Help Services Blogs', 'url' => 'https://www.assignmentinneed.com/blog'],
             ['name' => $data['blog']->tittle, 'url' => 'https://www.assignmentinneed.com/blog/' . $slug]
         ]);
-
-
-
-
+        
         return view("frontend.header.blog-detail", compact('data'));
     }
 
@@ -557,7 +559,8 @@ class HomeController extends Controller
 
 
 
-        $blogContent = $request->input('blogContent');
+        // $blogContent = $request->input('blogContent');
+        $blogContent = $this->cleanBlogContent($request->input('blogContent'));
 
         // Process Base64 images in <img> tags within the content
         if (strpos($blogContent, '<img') !== false) {
@@ -811,6 +814,7 @@ class HomeController extends Controller
 
     public function review()
     {
+        
         $data['review'] = Review::orderBy('created_at', 'desc')->take(9)->get(); // Load only first 9
         $data['expert'] = Experts::distinct('service', 'subject') // Avoid repeated subjects
             ->take(10) // Limit to 10 experts

@@ -121,7 +121,9 @@
 
   /* ✅ Form Height Reduced */
   .mini-quote {
-    width: 440px; max-width: 100%;
+    /* width: 440px; max-width: 100%; */
+    width: 100%;
+    max-width: 100%;
     padding: 10px 14px;
     border-radius: 16px;
     background: linear-gradient(135deg, rgba(255,255,255,.9) 0%, rgba(237,231,248,.7) 100%);

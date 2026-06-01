@@ -9,7 +9,10 @@
             <h1 class="section-title">Free Assignment Samples</h1>
         </div>
 
-        <a href="/free-samples" class="primary-button mt-4">Get 100% Original Assignments</a>
+        {{-- <a href="/free-samples" class="primary-button mt-4">Get 100% Original Assignments</a> --}}
+        <a href="javascript:void(0)" class="primary-button mt-4" data-bs-toggle="modal" data-bs-target="#quoteModal">
+            Get 100% Original Assignments
+        </a>
 
         <div class="icon-section mt-6">
             <div class="icon-item">
@@ -66,7 +69,70 @@
         </div>
     </section>
 
+    <div class="modal fade ain-quote-modal" id="quoteModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content ain-modal-content border-0 p-0 overflow-hidden">
+                <div class="d-flex">
+
+                    {{-- LEFT: SIRF IMAGE --}}
+                    <div class="ain-modal-left">
+                        <img src="{{ asset('assets/media/modal/bg.webp') }}" alt="Expert Assignment Help">
+                    </div>
+
+                    {{-- RIGHT: SAME FORM --}}
+                    <div class="ain-modal-right">
+                        <button type="button" class="ain-close-btn" data-bs-dismiss="modal" aria-label="Close">×</button>
+
+                        <div class="ain-form-head">
+                            <h3>Get Free <span>Assignment Quote</span> Instantly</h3>
+                            <div class="ain-divider">Fill the form and chat with our experts now.</div>
+                        </div>
+
+                        @include('components.pricing-card', ['dontShowInModal' => true])
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <style>
+        #quoteModal .modal-dialog     { max-width: 1100px !important; }
+        .ain-modal-content            { border-radius: 18px; overflow: hidden; max-height: 92vh; border: none; }
+
+        /* LEFT — sirf image */
+        .ain-modal-left               { width: 48%; flex-shrink: 0; overflow: hidden; }
+        .ain-modal-left img           { width: 100%; height: 100%; display: block; }
+
+        /* RIGHT */
+        .ain-modal-right              { flex: 1; background: #fff; width: 58%; padding: 25px; position: relative; overflow-y: auto; }
+
+        .ain-close-btn {
+            position: absolute; top: 12px; right: 14px;
+            width: 28px; height: 28px; border-radius: 50%;
+            background: #3a1fa8; border: none; cursor: pointer;
+            color: #fff; font-size: 16px; line-height: 1;
+            display: flex; align-items: center; justify-content: center; z-index: 10;
+        }
+
+        .ain-form-head h3             { font-size: 22px !important; font-weight: 800; text-align: center; line-height: 1.25; margin-bottom: 4px; color: #1a1a2e; }
+        .ain-form-head h3 span        { color: #5b48d9; }
+        .ain-divider {
+            text-align: center; font-size: 12.5px; color: #aaa;
+            margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
+        }
+        .ain-divider::before,
+        .ain-divider::after           { content: ''; flex: 1; height: 1px; background: #eee; }
+
+        /* mobile */
+        @media (max-width: 991px) {
+            #quoteModal .modal-dialog { max-width: 94% !important; margin: 15px auto; }
+            .ain-modal-left           { display: none !important; }
+            .ain-modal-right          { width: 100% !important; }
+        }
+        .ain-modal-content {
+    background: #f8f9ff;
+}
         .instructor-section {
             padding: 3rem 1rem;
             background-color: #f9f9fb;

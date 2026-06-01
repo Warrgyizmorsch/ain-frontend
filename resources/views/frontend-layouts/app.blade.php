@@ -17,6 +17,30 @@
     @else
         <link rel="canonical" href="{{ env('CANONICAL_URL', url()->current()) }}" />
     @endif
+    <link rel="alternate" hreflang="en-gb" href="https://www.assignnmentinneed.com/" /> 
+    {{-- Open Graph and twitter Card --}}
+    <link rel="canonical" href="https://www.assignnmentinneed.com/" />
+    <meta name="twitter:url" content="https://www.assignnmentinneed.com/">
+
+    <meta name="Robots" content="index, follow" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@assignment_in">
+    <meta name="twitter:creator" content="@assignment_in">
+
+    <meta name="twitter:title" content="Assignment Help UK #1 Assignment Writing Service Up to 40% Off">
+    <meta name="twitter:description" content="Get expert assignment help online from qualified academic writers. 24/7 support for essays, coursework, dissertations, and homework help in the UK.">
+
+    <meta name="twitter:image:src" content="https://www.assignnmentinneed.com/assets/media/avatars/assignment_logo.png">
+
+    <meta property="og:title" content="Assignment Help UK #1 Assignment Writing Service Up to 40% Off" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Professional assignment help services for UK students. Get support for essays, dissertations, coursework, and academic writing online." />
+
+    <meta property="og:site" content="https://www.assignnmentinneed.com/" />
+    <meta property="og:url" content="https://www.assignnmentinneed.com/" />
+
+    <meta property="og:image" content="https://www.assignnmentinneed.com/assets/media/avatars/assignment_logo.png" />
+
 
     @if(isset($data['artical']))
         <script type="application/ld+json">
@@ -320,7 +344,7 @@
                 style="font-size:50px; color: green; margin-left: 40px;"></i></a>
     </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!--<script src="https://www.google.com/recaptcha/api.js" defer></script>-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
     <script>

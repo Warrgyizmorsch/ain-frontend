@@ -570,14 +570,14 @@ hr{
                     <div class="card-details">
                         
                     <ul class="benefits-list">
-            <li><i class="fas fa-check-circle"></i>Qualified Writers</li>
-            <li><i class="fas fa-check-circle"></i>Quality Writing with Zero AI</li>
-            <li><i class="fas fa-check-circle"></i>Plagiarism Report</li>
-            <li><i class="fas fa-check-circle"></i>Unlimited Revisions and Reworks</li>
-        </ul>
+                        <li><i class="fas fa-check-circle"></i>Qualified Writers</li>
+                        <li><i class="fas fa-check-circle"></i>Quality Writing with Zero AI</li>
+                        <li><i class="fas fa-check-circle"></i>Plagiarism Report</li>
+                        <li><i class="fas fa-check-circle"></i>Unlimited Revisions and Reworks</li>
+                    </ul>
 
                     </div>
-                    <button>Order Now</button>
+                    <button onclick="window.location.href='{{ url('/upload-your-assignment') }}'">Order Now</button>
                 </div>
                 <div class="ad-card">
                     <img src="{{ asset('/images/side-banner.jpeg') }}"

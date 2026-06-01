@@ -67,19 +67,19 @@
                   <ul class="info-list">
                     <li>
                       <i class="fa fa-phone"></i>
-                      <a href="tel:+442037695831"> +44 2037695831</a>
+                      <a href="tel:+442037695831" rel="nofollow noopener noreferrer"target="_blank"> +44 2037695831</a>
                     </li>
                     <li>
                       <i class="fa fa-whatsapp"></i>
-                      <a href="tel:+447826233106"> +44 7826233106</a>
+                      <a href="tel:+447826233106" rel="nofollow noopener noreferrer" target="_blank"> +44 7826233106</a>
                     </li>
                     <li>
                       <i class="fa fa-envelope"></i>
-                      <a href="mailto:info@assignnmentinneed.com">info@assignnmentinneed.com</a>
+                      <a href="mailto:info@assignnmentinneed.com" rel="nofollow noopener noreferrer" target="_blank">info@assignnmentinneed.com</a>
                     </li>
                     <li>
                       <i class="fa fa-map-marker"></i>
-                      <a href="mailto:info@assignnmentinneed.com">
+                      <a href="mailto:info@assignnmentinneed.com" rel="nofollow noopener noreferrer" target="_blank">
                         International House, Constance Street, London United Kingdom
                       </a>
                     </li>
@@ -87,27 +87,27 @@
 
                   <ul class="social-box">
                     <li>
-                      <a href="https://twitter.com/assignment_in">
+                      <a href="https://twitter.com/assignment_in" rel="nofollow noopener noreferrer" target="_blank">
                         <span class="iconify" data-icon="simple-icons:x"></span>
                       </a>
                     </li>
                     <li>
-                      <a href="https://in.pinterest.com/assignnmentinneed66/">
+                      <a href="https://in.pinterest.com/assignnmentinneed66/" rel="nofollow noopener noreferrer" target="_blank">
                         <span class="iconify" data-icon="simple-icons:pinterest"></span>
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.instagram.com/assignmentinneedofficial/">
+                      <a href="https://www.instagram.com/assignmentinneedofficial/" rel="nofollow noopener noreferrer" target="_blank">
                         <span class="iconify" data-icon="simple-icons:instagram"></span>
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.facebook.com/profile.php?id=61564613120071">
+                      <a href="https://www.facebook.com/profile.php?id=61564613120071" rel="nofollow noopener noreferrer" target="_blank">
                         <span class="iconify" data-icon="simple-icons:facebook"></span>
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.youtube.com/@assignmentinneed1169">
+                      <a href="https://www.youtube.com/@assignmentinneed1169" rel="nofollow noopener noreferrer" target="_blank">
                         <span class="iconify" data-icon="simple-icons:youtube"></span>
                       </a>
                     </li>

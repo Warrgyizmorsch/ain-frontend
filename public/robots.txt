@@ -1,0 +1,21 @@
+# Allow all important pages
+Allow: /
+
+# Block private/admin pages
+Disallow: /login
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /user
+Disallow: /account
+
+# Block search/filter parameters
+Disallow: /*?search=
+Disallow: /*?filter=
+Disallow: /*?sort=
+Disallow: /*?utm_
+
+# Block duplicate/thin pages
+Disallow: /search
+
+# Sitemap
+Sitemap: https://www.assignnmentinneed.com/sitemap.xml
