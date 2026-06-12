@@ -23,7 +23,7 @@
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            gap: 3rem;
+            gap: 0;
             position: relative;
         }
 
@@ -103,6 +103,11 @@
         .znw-hero-image-wrapper img {
             max-width: 100%;
             height: auto;
+            position: relative;
+            z-index: 1;
+            /* Balanced size so it's not too small, but doesn't create huge top/bottom gaps */
+            max-height: 420px;
+            object-fit: contain;
         }
 
         /* Filters Section */
@@ -114,7 +119,9 @@
             display: flex;
             align-items: center;
             gap: 0;
-            margin-top: 1rem;
+            margin-top: -2rem; /* Pull up to cover extra space smoothly */
+            position: relative;
+            z-index: 10;
         }
 
         .znw-filter-group {
@@ -211,6 +218,7 @@
             .znw-hero-top {
                 flex-direction: column;
                 text-align: center;
+                align-items: center;
             }
 
             .znw-hero-content {
@@ -225,6 +233,7 @@
                 grid-template-columns: repeat(4, 1fr);
                 gap: 0.5rem;
                 padding: 1rem;
+                margin-top: -2rem; /* Less negative margin on smaller screens */
             }
         }
 
@@ -290,6 +299,7 @@
                 gap: 0;
                 background: #f8f7fc;
                 overflow: hidden;
+                margin-top: -1rem; /* Adjust for mobile */
             }
 
             .znw-filter-group {
@@ -368,7 +378,7 @@
                 </div>
                 <div class="znw-hero-image-wrapper">
                     <!-- Placeholder: User will add the image later -->
-                    <img src="/public/new-home-page-images/writer-hero-placeholder.png" alt="Academic Writers" />
+                    <img src="/public/new-home-page-images/Writer-Hero-bg.webp" alt="Academic Writers" />
                 </div>
             </div>
 

@@ -100,8 +100,8 @@
                     </div>
 
                     <div class="znh-action-buttons">
-                        <a href="#" class="znh-btn-primary">Get Free Quote &rarr;</a>
-                        <a href="#" class="znh-btn-secondary">View Our Experts &rarr;</a>
+                        <a href="/upload-your-assignment" class="znh-btn-primary">Get Free Quote &rarr;</a>
+                        <a href="/writers" class="znh-btn-secondary">View Our Experts &rarr;</a>
                     </div>
                 </div>
 
@@ -109,8 +109,7 @@
                 <div class="znh-new-image-column">
                     <div class="znh-image-wrapper">
                         <!-- Replace with your actual image path -->
-                        <img src="/public/new-home-page-images/ain-hero-bg.webp" alt="Student studying"
-                            class="znh-main-student-image">
+                        <!-- Image moved to section background -->
 
                         <!-- Floating Badges -->
                         <div class="znh-floating-badge znh-badge-1">
@@ -169,7 +168,10 @@
             }
 
             .znh-new-bg-hero {
-                background: linear-gradient(135deg, #fdfbfe 0%, #f6effc 50%, #fef8f5 100%);
+                background-image: url('/public/new-home-page-images/ain-hero-bg.webp');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
                 /* Optional: Add abstract blob background images here */
                 padding: 3rem 2rem 4rem 2rem;
                 /* Increased top padding to avoid header overlap */
@@ -264,7 +266,6 @@
 
             .znh-stat-item {
                 display: flex;
-                align-items: center;
                 gap: 8px;
             }
 
@@ -303,10 +304,13 @@
                 display: inline-flex;
                 align-items: center;
                 transition: all 0.3s ease;
+                border: 1px solid transparent;
             }
 
             .znh-btn-primary:hover {
-                background: white;
+                background: #6d28d9;
+                color: white !important;
+                border-color: transparent;
                 transform: translateY(-2px);
             }
 
@@ -325,6 +329,7 @@
 
             .znh-btn-secondary:hover {
                 background: #f9fafb;
+                color: #111827 !important;
                 transform: translateY(-2px);
             }
 
@@ -341,6 +346,7 @@
                 position: relative;
                 width: 100%;
                 max-width: 450px;
+                min-height: 400px;
             }
 
             .znh-main-student-image {
@@ -600,6 +606,7 @@
 
             .znh-btn-submit:hover {
                 background: #ea580c;
+                color: white !important;
                 transform: translateY(-1px);
                 box-shadow: 0 6px 18px rgba(249, 115, 22, 0.4);
             }
@@ -999,7 +1006,7 @@
                 }
 
                 /* Hide the 7th and 14th logo to make it 12 logos total, 
-                                                                                                                       which perfectly splits into 2 rows and 6 columns for seamless scrolling */
+                                                                                                                                                           which perfectly splits into 2 rows and 6 columns for seamless scrolling */
                 .znh-hero-marquee-track img:nth-child(7),
                 .znh-hero-marquee-track img:nth-child(14) {
                     display: none;
@@ -1354,7 +1361,13 @@
                 color: #4b5563;
                 margin: 0 0 1.5rem 0;
                 line-height: 1.4;
-                max-width: 80%;
+                max-width: 60%;
+                position: relative;
+                z-index: 2;
+            }
+
+            .znh-large-card p {
+                max-width: 90%;
             }
 
             .znh-service-stats {
@@ -1376,11 +1389,11 @@
 
             .znh-service-image {
                 position: absolute;
-                bottom: -10px;
-                right: -10px;
-                width: 50%;
+                bottom: -15px;
+                right: -15px;
+                width: 65%;
                 height: auto;
-                max-height: 65%;
+                max-height: 85%;
                 object-fit: contain;
                 z-index: 1;
                 transform-origin: bottom right;
@@ -1388,10 +1401,10 @@
             }
 
             .znh-large-card .znh-service-image {
-                width: 85%;
-                max-height: 60%;
+                width: 110%;
+                max-height: 75%;
                 bottom: -5%;
-                right: -10%;
+                right: -5%;
             }
 
             .znh-service-card:hover .znh-service-image {
@@ -1400,35 +1413,35 @@
 
             /* Theme Colors */
             .znh-purple-theme {
-                background: #f3e8ff;
+                background: linear-gradient(135deg, #ffffff 0%, #f3e8ff 100%);
             }
 
             .znh-orange-theme {
-                background: #fff7ed;
+                background: linear-gradient(135deg, #ffffff 0%, #fff7ed 100%);
             }
 
             .znh-purple-light-theme {
-                background: #faf5ff;
+                background: linear-gradient(135deg, #ffffff 0%, #faf5ff 100%);
             }
 
             .znh-rose-theme {
-                background: #fff1f2;
+                background: linear-gradient(135deg, #ffffff 0%, #fff1f2 100%);
             }
 
             .znh-blue-theme {
-                background: #f0f9ff;
+                background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
             }
 
             .znh-gray-theme {
-                background: #f8fafc;
+                background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
             }
 
             .znh-pink-theme {
-                background: #fdf4ff;
+                background: linear-gradient(135deg, #ffffff 0%, #fdf4ff 100%);
             }
 
             .znh-teal-theme {
-                background: #f0fdf4;
+                background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
             }
 
             @media (max-width: 1200px) {
@@ -1552,6 +1565,12 @@
                     font-size: 0.8rem;
                     font-weight: 600;
                     text-decoration: none;
+                    transition: all 0.3s ease;
+                }
+
+                .znh-view-all-services-btn-mobile:hover {
+                    background: #f3f4f6;
+                    color: #3730a3 !important;
                 }
 
                 /* Mobile Icon Backgrounds based on theme */
@@ -1796,7 +1815,7 @@
             }
 
             .znh-view-all-link:hover {
-                color: #3730a3;
+                color: #3730a3 !important;
             }
 
             .znh-subjects-slider-container {
@@ -2056,6 +2075,12 @@
                     font-size: 0.8rem;
                     font-weight: 600;
                     text-decoration: none;
+                    transition: all 0.3s ease;
+                }
+
+                .znh-view-all-subjects-btn-mobile:hover {
+                    background: #f3f4f6;
+                    color: #3730a3 !important;
                 }
             }
         </style>
@@ -2420,7 +2445,7 @@
             <div class="znh-samples-header">
                 <h2 class="znh-samples-title">Assignment Samples</h2>
                 <p class="znh-samples-desc">High-quality work samples to get an idea of our writing quality.</p>
-                <a href="{{ url('samples') }}" class="znh-btn-view-samples znh-hide-on-mobile">View All Samples</a>
+                <a href="{{ url('free-samples') }}" class="znh-btn-view-samples znh-hide-on-mobile">View All Samples</a>
             </div>
 
             <div class="znh-samples-slider-container">
@@ -2573,6 +2598,7 @@
 
             .znh-btn-view-samples:hover {
                 background: #6d28d9;
+                color: white !important;
                 transform: translateY(-2px);
             }
 
@@ -2856,6 +2882,12 @@
                     font-size: 0.8rem;
                     font-weight: 600;
                     text-decoration: none;
+                    transition: all 0.3s ease;
+                }
+
+                .znh-view-all-samples-btn-mobile:hover {
+                    background: #f3f4f6;
+                    color: #6d28d9 !important;
                 }
             }
         </style>
@@ -3892,7 +3924,7 @@
             }
 
             .znh-view-more-link a:hover {
-                color: #4c1d95;
+                color: #4c1d95 !important;
                 text-decoration: underline;
             }
 
@@ -4110,7 +4142,7 @@
             </div>
 
             <div class="znh-cta-action">
-                <a href="#" class="znh-cta-btn">Get Free Quote Now &rarr;</a>
+                <a href="/upload-your-assignment" class="znh-cta-btn">Get Free Quote Now &rarr;</a>
                 <div class="znh-cta-social-proof">
                     <div class="znh-avatars">
                         <img src="/assets/media/layout/testimonial/testimonial1.webp" alt="Student">
@@ -4278,7 +4310,7 @@
             .znh-cta-btn:hover {
                 transform: translateY(-3px);
                 box-shadow: 0 15px 25px rgba(250, 104, 48, 0.4);
-                color: white;
+                color: white !important;
             }
 
             .znh-cta-social-proof {
