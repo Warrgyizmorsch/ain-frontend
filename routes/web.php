@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MasterController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\WalletController;
 use Illuminate\Support\Facades\Route;
@@ -31,6 +32,9 @@ use Illuminate\Support\Facades\DB;
 
 Route::post('/takeover-confirm', [AuthenticatedSessionController::class, 'doTakeover'])->name('do-takeover');
 
+Route::get('/new-home', function () {
+    return view('components.common-section.new-home-page');
+});
 
 Route::get('/load-more-blogs', [BlogController::class, 'loadMore']);
 Route::post('/contact-us/submit', [ContactController::class, 'submit'])->name('contact.submit');
@@ -53,6 +57,9 @@ Route::get('/test-broadcast', function () {
 });
 
 
+
+Route::post('/sendsms', [ChatController::class, 'send'])->name('send-whatsapp');
+Route::get('/chat/{phone?}', [ChatController::class, 'showChat'])->name('chat');
 Route::post('/writer-login', [UserController::class, 'Login']);
 Route::post('/neworder-fromhome', [LeadsController::class, 'FrontEndLeads'])->name('neworder.create');
 Route::post('/placeNewOrder', [LeadsController::class, 'FrontEndLeadsNew']);
@@ -225,25 +232,25 @@ Route::get('/MyOrders', [OrderController::class, 'myOrder'])->middleware(['auth'
 //     return view('frontend/header/company/about', compact('data'));
 
 // });
-// Route::get('/what-we-are', function () {
-//     $data = [
-//         'title' => 'About Assignment in Need | Your Assignment Help Uk Partner',
-//         'description' => 'Learn about our Services writers, why choose us, and why Assignment In Need is trusted for quality assignment help  services for UK students, plagiarism-free and AI-free assignment help',
-//         'keyword' => '',
-//         'canonical' => 'https://www.assignnmentinneed.com/what-we-are',
-//     ];
+Route::get('/what-we-are', function () {
+    $data = [
+        'title' => 'About Assignment in Need | Your Assignment Help Uk Partner',
+        'description' => 'Learn about our Services writers, why choose us, and why Assignment In Need is trusted for quality assignment help  services for UK students, plagiarism-free and AI-free assignment help',
+        'keyword' => '',
+        'canonical' => 'https://www.assignnmentinneed.com/what-we-are',
+    ];
 
-//     $data['expert'] = Experts::distinct('service', 'subject') // Avoid repeated subjects
-//         ->take(10) // Limit to 10 experts
-//         ->get();
+    $data['expert'] = Experts::distinct('service', 'subject') // Avoid repeated subjects
+        ->take(10) // Limit to 10 experts
+        ->get();
 
-//     return view('frontend.header.company.what-we-are', compact('data'));
-// });
+    return view('frontend.header.company.what-we-are', compact('data'));
+});
 
 
-// Route::get('/assignment-help-expert-uk', function () {
-//     return redirect()->to('https://www.assignnmentinneed.com/what-we-are', 301);
-// });
+Route::get('/assignment-help-expert-uk', function () {
+    return redirect()->to('https://www.assignnmentinneed.com/what-we-are', 301);
+});
 
 
 Route::get('/why-choose-us', function () {
@@ -779,33 +786,33 @@ Route::get('/engineering-assignment-writing-help', function () {
 });
 
 // cheap page
-// Route::get('/cheap-assignment-writing-help', function () {
-//     $schemaService = new SchemaService();
-//     $data = config('dataload.cheap-assignment-writing-help.meta');
-//     $priceRanges = config('dataload.cheap-assignment-writing-help.price_ranges');
-//     $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
-//     $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.cheap-assignment-writing-help.faqs'));
-//     $data['expert'] = Experts::where('service', 'Assignment')
-//         ->distinct('subject') // Avoid repeated subjects
-//         ->take(10) // Limit to 10 experts
-//         ->get();
-//     return view('frontend.header.services.sub.cheap', compact('data'));
-// });
+Route::get('/cheap-assignment-writing-help', function () {
+    $schemaService = new SchemaService();
+    $data = config('dataload.cheap-assignment-writing-help.meta');
+    $priceRanges = config('dataload.cheap-assignment-writing-help.price_ranges');
+    $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
+    $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.cheap-assignment-writing-help.faqs'));
+    $data['expert'] = Experts::where('service', 'Assignment')
+        ->distinct('subject') // Avoid repeated subjects
+        ->take(10) // Limit to 10 experts
+        ->get();
+    return view('frontend.header.services.sub.cheap', compact('data'));
+});
 
 // 31-aug-24 made new page  helpwith by navneet, live on-05-sept-24
-// Route::get('/help-with-assignment-online', function () {
-//     $schemaService = new SchemaService();
-//     $data = config('dataload.help-with-assignment-online.meta');
-//     $priceRanges = config('dataload.help-with-assignment-online.price_ranges');
-//     $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
-//     $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.help-with-assignment-online.faqs'));
-//     $data['expert'] = Experts::where('service', 'assignment')
-//         ->where('subject', '!=', 'NULL') // Exclude rows where 'subject' is NULL
-//         ->distinct('subject') // Avoid repeated subjects
-//         ->take(10) // Limit to 10 experts
-//         ->get();
-//     return view('frontend.header.services.sub.help-with-assignment-online', compact('data'));
-// });
+Route::get('/help-with-assignment-online', function () {
+    $schemaService = new SchemaService();
+    $data = config('dataload.help-with-assignment-online.meta');
+    $priceRanges = config('dataload.help-with-assignment-online.price_ranges');
+    $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
+    $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.help-with-assignment-online.faqs'));
+    $data['expert'] = Experts::where('service', 'assignment')
+        ->where('subject', '!=', 'NULL') // Exclude rows where 'subject' is NULL
+        ->distinct('subject') // Avoid repeated subjects
+        ->take(10) // Limit to 10 experts
+        ->get();
+    return view('frontend.header.services.sub.help-with-assignment-online', compact('data'));
+});
 // 29-aug-24 update for new pages
 // 17-sep-24 update for new pages start
 Route::get('/expert-assignment-writing-help', function () {
@@ -822,49 +829,49 @@ Route::get('/expert-assignment-writing-help', function () {
     return view('frontend.header.services.sub.expert-assignment-writing-help', compact('data'));
 });
 
-// Route::get('/assignment-helper', function () {
-//     $schemaService = new SchemaService();
-//     $data = config('dataload.assignment-helper.meta');
-//     $priceRanges = config('dataload.assignment-helper.price_ranges');
-//     $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
-//     $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.assignment-helper.faqs'));
-//     $data['expert'] = Experts::where('service', 'assignment')
-//         ->where('subject', '!=', 'NULL') // Exclude rows where 'subject' is NULL
-//         ->distinct('subject') // Avoid repeated subjects
-//         ->take(10) // Limit to 10 experts
-//         ->get();
-//     return view('frontend.header.services.sub.assignment-helper-writing-help', compact('data'));
-// });
+Route::get('/assignment-helper', function () {
+    $schemaService = new SchemaService();
+    $data = config('dataload.assignment-helper.meta');
+    $priceRanges = config('dataload.assignment-helper.price_ranges');
+    $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
+    $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.assignment-helper.faqs'));
+    $data['expert'] = Experts::where('service', 'assignment')
+        ->where('subject', '!=', 'NULL') // Exclude rows where 'subject' is NULL
+        ->distinct('subject') // Avoid repeated subjects
+        ->take(10) // Limit to 10 experts
+        ->get();
+    return view('frontend.header.services.sub.assignment-helper-writing-help', compact('data'));
+});
 
 
-// Route::get('/pay-for-assignment-help', function () {
-//     $schemaService = new SchemaService();
-//     $data = config('dataload.pay-for-assignment-help.meta');
-//     $priceRanges = config('dataload.pay-for-assignment-help.price_ranges');
-//     $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
-//     $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.pay-for-assignment-help.faqs'));
-//     $data['expert'] = Experts::where('service', 'assignment')
-//         ->where('subject', '!=', 'NULL') // Exclude rows where 'subject' is NULL
-//         ->distinct('subject') // Avoid repeated subjects
-//         ->take(10) // Limit to 10 experts
-//         ->get();
-//     return view('frontend.header.services.sub.pay-for-assignment-help', compact('data'));
-// });
+Route::get('/pay-for-assignment-help', function () {
+    $schemaService = new SchemaService();
+    $data = config('dataload.pay-for-assignment-help.meta');
+    $priceRanges = config('dataload.pay-for-assignment-help.price_ranges');
+    $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
+    $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.pay-for-assignment-help.faqs'));
+    $data['expert'] = Experts::where('service', 'assignment')
+        ->where('subject', '!=', 'NULL') // Exclude rows where 'subject' is NULL
+        ->distinct('subject') // Avoid repeated subjects
+        ->take(10) // Limit to 10 experts
+        ->get();
+    return view('frontend.header.services.sub.pay-for-assignment-help', compact('data'));
+});
 
 // 17-sep-24 update for new pages end
-// Route::get('/best-online-assignment-writing-service', function () {
-//     $schemaService = new SchemaService();
-//     $data = config('dataload.best-online-assignment-writing-service.meta');
-//     $priceRanges = config('dataload.best-online-assignment-writing-service.price_ranges');
-//     $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
-//     $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.best-online-assignment-writing-service.faqs'));
-//     $data['expert'] = Experts::where('service', 'assignment')
-//         ->where('subject', '!=', 'NULL') // Exclude rows where 'subject' is NULL
-//         ->distinct('subject') // Avoid repeated subjects
-//         ->take(10) // Limit to 10 experts
-//         ->get();
-//     return view('frontend.header.services.sub.best-online-assignment-writing-service', compact('data'));
-// });
+Route::get('/best-online-assignment-writing-service', function () {
+    $schemaService = new SchemaService();
+    $data = config('dataload.best-online-assignment-writing-service.meta');
+    $priceRanges = config('dataload.best-online-assignment-writing-service.price_ranges');
+    $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
+    $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.best-online-assignment-writing-service.faqs'));
+    $data['expert'] = Experts::where('service', 'assignment')
+        ->where('subject', '!=', 'NULL') // Exclude rows where 'subject' is NULL
+        ->distinct('subject') // Avoid repeated subjects
+        ->take(10) // Limit to 10 experts
+        ->get();
+    return view('frontend.header.services.sub.best-online-assignment-writing-service', compact('data'));
+});
 
 ///25-10-24 made new page of Do my Assignment for me by navneet
 Route::get('/do-my-assignment-for-me', function () {
@@ -882,35 +889,35 @@ Route::get('/do-my-assignment-for-me', function () {
 });
 
 /// 25-10--24 made new page of Academic Assignment Writing Help Service by navneet
-// Route::get('academic-assignment-writing-help-service', function () {
-//     $schemaService = new SchemaService();
-//     $data = config('dataload.academic-assignment-writing-help-service.meta');
-//     $priceRanges = config('dataload.academic-assignment-writing-help-service.price_ranges');
-//     $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
-//     $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.academic-assignment-writing-help-service.faqs'));
-//     $data['expert'] = Experts::where('service', 'assignment')
-//         ->where('subject', '!=', 'NULL') // Exclude rows where 'subject' is NULL
-//         ->distinct('subject') // Avoid repeated subjects
-//         ->take(10) // Limit to 10 experts
-//         ->get();
-//     return view('frontend.header.services.sub.academic-assignment-writing-help-service', compact('data'));
-// });
+Route::get('academic-assignment-writing-help-service', function () {
+    $schemaService = new SchemaService();
+    $data = config('dataload.academic-assignment-writing-help-service.meta');
+    $priceRanges = config('dataload.academic-assignment-writing-help-service.price_ranges');
+    $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
+    $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.academic-assignment-writing-help-service.faqs'));
+    $data['expert'] = Experts::where('service', 'assignment')
+        ->where('subject', '!=', 'NULL') // Exclude rows where 'subject' is NULL
+        ->distinct('subject') // Avoid repeated subjects
+        ->take(10) // Limit to 10 experts
+        ->get();
+    return view('frontend.header.services.sub.academic-assignment-writing-help-service', compact('data'));
+});
 
 /// 25-10-25 made new page of Top Assignment Writing Help Service by navneet
-// Route::get('top-assignment-writing-help-service', function () {
-//     $schemaService = new SchemaService();
-//     $data = config('dataload.top-assignment-writing-help-service.meta');
-//     $priceRanges = config('dataload.top-assignment-writing-help-service.price_ranges');
-//     $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
-//     $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.top-assignment-writing-help-service.faqs'));
-//     $data['expert'] = Experts::where('service', 'assignment')
-//         ->where('subject', '!=', 'NULL') // Exclude rows where 'subject' is NULL
-//         ->distinct('subject') // Avoid repeated subjects
-//         ->take(10) // Limit to 10 experts
-//         ->get();
-//     return view('frontend.header.services.sub.top-assignment-writing-help-service', compact('data'));
+Route::get('top-assignment-writing-help-service', function () {
+    $schemaService = new SchemaService();
+    $data = config('dataload.top-assignment-writing-help-service.meta');
+    $priceRanges = config('dataload.top-assignment-writing-help-service.price_ranges');
+    $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
+    $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.top-assignment-writing-help-service.faqs'));
+    $data['expert'] = Experts::where('service', 'assignment')
+        ->where('subject', '!=', 'NULL') // Exclude rows where 'subject' is NULL
+        ->distinct('subject') // Avoid repeated subjects
+        ->take(10) // Limit to 10 experts
+        ->get();
+    return view('frontend.header.services.sub.top-assignment-writing-help-service', compact('data'));
 
-// });
+});
 
 
 Route::get('/dissertation-writing-help-services', function () {
@@ -1063,35 +1070,35 @@ Route::get('/university-assignment-writing-help', function () {
         ->get();
     return view('frontend.header.services.sub.university-assignment-writing-help', compact('data'));
 });
-// Route::get('/my-assignment-help', function () {
-//     $schemaService = new SchemaService();
-//     $data = config('dataload.my-assignment-help.meta');
-//     $priceRanges = config('dataload.common.price_ranges');
-//     $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
-//     $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.my-assignment-help.faqs'));
-//     $data['expert'] = Experts::where('service', 'Assignment')
+Route::get('/my-assignment-help', function () {
+    $schemaService = new SchemaService();
+    $data = config('dataload.my-assignment-help.meta');
+    $priceRanges = config('dataload.common.price_ranges');
+    $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
+    $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.my-assignment-help.faqs'));
+    $data['expert'] = Experts::where('service', 'Assignment')
 
-//         ->distinct('subject') // Avoid repeated subjects
-//         ->take(10) // Limit to 10 experts
-//         ->get();
-//     return view('frontend.header.services.sub.my-assignment-help', compact('data'));
-// });
+        ->distinct('subject') // Avoid repeated subjects
+        ->take(10) // Limit to 10 experts
+        ->get();
+    return view('frontend.header.services.sub.my-assignment-help', compact('data'));
+});
 
 // 27-11-2024 for instant assignment Help page
-// Route::get('/instant-assignment-help', function () {
-//     $schemaService = new SchemaService();
-//     $data = config('dataload.instant-assignment-help.meta');
-//     $priceRanges = config('dataload.common.price_ranges');
-//     $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
-//     $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.instant-assignment-help.faqs'));
+Route::get('/instant-assignment-help', function () {
+    $schemaService = new SchemaService();
+    $data = config('dataload.instant-assignment-help.meta');
+    $priceRanges = config('dataload.common.price_ranges');
+    $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
+    $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.instant-assignment-help.faqs'));
 
-//     $data['expert'] = Experts::where('service', 'Assignment')
+    $data['expert'] = Experts::where('service', 'Assignment')
 
-//         ->distinct('subject') // Avoid repeated subjects
-//         ->take(10) // Limit to 10 experts
-//         ->get();
-//     return view('frontend.header.services.sub.instant-assignment-help', compact('data'));
-// });
+        ->distinct('subject') // Avoid repeated subjects
+        ->take(10) // Limit to 10 experts
+        ->get();
+    return view('frontend.header.services.sub.instant-assignment-help', compact('data'));
+});
 
 
 //06/12/24 made new page Organic Chemistry Assignment Help
@@ -2575,23 +2582,23 @@ route::get('/uk/primary-homework-help', function () {
 
 
 // 02/12/24 new page in uk country write my assignment for me
-// route::get('/uk/write-my-assignment-for-me', function () {
-//     $schemaService = new SchemaService();
-//     $data = config('dataload./uk/write-my-assignment-for-me.meta');
-//     $priceRanges = config('dataload.common.price_ranges');
-//     $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
-//     $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload./uk/write-my-assignment-for-me.faqs'));
-//     $data['website'] = $schemaService->generateWebsiteSchema();
-//     $data['org'] = $schemaService->generateOrganizationSchema();
-//     $data['flag'] = $schemaService->hrefFlagUrl();
+route::get('/uk/write-my-assignment-for-me', function () {
+    $schemaService = new SchemaService();
+    $data = config('dataload./uk/write-my-assignment-for-me.meta');
+    $priceRanges = config('dataload.common.price_ranges');
+    $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
+    $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload./uk/write-my-assignment-for-me.faqs'));
+    $data['website'] = $schemaService->generateWebsiteSchema();
+    $data['org'] = $schemaService->generateOrganizationSchema();
+    $data['flag'] = $schemaService->hrefFlagUrl();
 
-//     $data['expert'] = Experts::where('location', 'uk') // Exclude rows where 'subject' is NULL
-//         ->where('service', 'Assignment')
+    $data['expert'] = Experts::where('location', 'uk') // Exclude rows where 'subject' is NULL
+        ->where('service', 'Assignment')
 
 
-//         ->get();
-//     return view('frontend.header.country.uk.write-my-assignment-for-me', compact('data'));
-// });
+        ->get();
+    return view('frontend.header.country.uk.write-my-assignment-for-me', compact('data'));
+});
 
 // Route::get('/au/sydney/assignment-help', function () {
 //     $schemaService = new SchemaService();
@@ -3467,7 +3474,7 @@ Route::get(
         $data['canonical'] = 'https://www.assignnmentinneed.com/upload-your-assignment';
 
         $countries = DB::table('countries')->orderBy('name')->get();
-        return view('frontend/header/order-now-2', compact('data','countries'));
+        return view('frontend/header/order-now-2', compact('data', 'countries'));
     }
 );
 Route::post('/upload-new-order', [OrderController::class, 'submit'])->name('upload-new-order');
@@ -3482,7 +3489,8 @@ Route::get(
         $data['description'] = 'Contact Assignment In Need today for expert assistance with all types of assignments. Our experienced team is ready to provide high-quality academic Support.';
         $data['keyword'] = '';
         $data['canonical'] = 'https://www.assignnmentinneed.com/contact-us';
-        return view('frontend/header/contact-us', compact('data'));
+        // return view('frontend/header/contact-us', compact('data'));
+        return view('frontend/header/new-contact-page', compact('data'));
     }
 );
 
@@ -5196,12 +5204,6 @@ Route::get('/psychology-dissertation-help-uk', function () {
 
 Route::get('/feedbacks', function () {
     return view('feedbacks');
-});
-
-Route::get('/robots.txt', function () {
-    return response()->file(public_path('robots.txt'), [
-        'Content-Type' => 'text/plain'
-    ]);
 });
 
 require __DIR__ . '/auth.php';
