@@ -26,24 +26,24 @@
             </p>
             
             <div class="grid grid-cols-5 gap-2 lg:flex lg:flex-wrap lg:gap-8 mb-10">
-                <div class="flex flex-col items-center text-center">
-                    <div class="w-10 h-10 lg:w-14 lg:h-14 bg-white rounded-full flex items-center justify-center text-purple-600 shadow-sm border border-gray-100 mb-1 lg:mb-2 text-base lg:text-2xl"><i class="fa-solid fa-award"></i></div>
+                <div class="flex flex-col items-center text-center group cursor-pointer hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-10 h-10 lg:w-14 lg:h-14 bg-white rounded-full flex items-center justify-center text-purple-600 shadow-sm border border-gray-100 mb-1 lg:mb-2 text-base lg:text-2xl group-hover:bg-purple-600 group-hover:text-black group-hover:scale-110 group-hover:shadow-purple-200 transition-all duration-300"><i class="fa-solid fa-award"></i></div>
                     <span class="text-[9px] lg:text-xs font-bold text-gray-900 leading-tight">100% Original<br>Work</span>
                 </div>
-                <div class="flex flex-col items-center text-center">
-                    <div class="w-10 h-10 lg:w-14 lg:h-14 bg-white rounded-full flex items-center justify-center text-purple-600 shadow-sm border border-gray-100 mb-1 lg:mb-2 text-base lg:text-2xl"><i class="fa-regular fa-clock"></i></div>
+                <div class="flex flex-col items-center text-center group cursor-pointer hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-10 h-10 lg:w-14 lg:h-14 bg-white rounded-full flex items-center justify-center text-purple-600 shadow-sm border border-gray-100 mb-1 lg:mb-2 text-base lg:text-2xl group-hover:bg-purple-600 group-hover:text-black group-hover:scale-110 group-hover:shadow-purple-200 transition-all duration-300"><i class="fa-regular fa-clock"></i></div>
                     <span class="text-[9px] lg:text-xs font-bold text-gray-900 leading-tight">On-Time<br>Delivery</span>
                 </div>
-                <div class="flex flex-col items-center text-center">
-                    <div class="w-10 h-10 lg:w-14 lg:h-14 bg-white rounded-full flex items-center justify-center text-purple-600 shadow-sm border border-gray-100 mb-1 lg:mb-2 text-base lg:text-2xl"><i class="fa-solid fa-user-graduate"></i></div>
+                <div class="flex flex-col items-center text-center group cursor-pointer hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-10 h-10 lg:w-14 lg:h-14 bg-white rounded-full flex items-center justify-center text-purple-600 shadow-sm border border-gray-100 mb-1 lg:mb-2 text-base lg:text-2xl group-hover:bg-purple-600 group-hover:text-black group-hover:scale-110 group-hover:shadow-purple-200 transition-all duration-300"><i class="fa-solid fa-user-graduate"></i></div>
                     <span class="text-[9px] lg:text-xs font-bold text-gray-900 leading-tight">Expert<br>Writers</span>
                 </div>
-                <div class="flex flex-col items-center text-center">
-                    <div class="w-10 h-10 lg:w-14 lg:h-14 bg-white rounded-full flex items-center justify-center text-purple-600 shadow-sm border border-gray-100 mb-1 lg:mb-2 text-base lg:text-2xl"><i class="fa-solid fa-headset"></i></div>
+                <div class="flex flex-col items-center text-center group cursor-pointer hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-10 h-10 lg:w-14 lg:h-14 bg-white rounded-full flex items-center justify-center text-purple-600 shadow-sm border border-gray-100 mb-1 lg:mb-2 text-base lg:text-2xl group-hover:bg-purple-600 group-hover:text-black group-hover:scale-110 group-hover:shadow-purple-200 transition-all duration-300"><i class="fa-solid fa-headset"></i></div>
                     <span class="text-[9px] lg:text-xs font-bold text-gray-900 leading-tight">24/7<br>Support</span>
                 </div>
-                <div class="flex flex-col items-center text-center">
-                    <div class="w-10 h-10 lg:w-14 lg:h-14 bg-white rounded-full flex items-center justify-center text-purple-600 shadow-sm border border-gray-100 mb-1 lg:mb-2 text-base lg:text-2xl"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="flex flex-col items-center text-center group cursor-pointer hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-10 h-10 lg:w-14 lg:h-14 bg-white rounded-full flex items-center justify-center text-purple-600 shadow-sm border border-gray-100 mb-1 lg:mb-2 text-base lg:text-2xl group-hover:bg-purple-600 group-hover:text-black group-hover:scale-110 group-hover:shadow-purple-200 transition-all duration-300"><i class="fa-solid fa-shield-halved"></i></div>
                     <span class="text-[9px] lg:text-xs font-bold text-gray-900 leading-tight">Money Back<br>Guarantee</span>
                 </div>
             </div>
@@ -168,54 +168,54 @@
             <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-10 max-w-xl leading-snug">Everything You Get With Assignment In Need</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 lg:gap-6 w-full">
-                <div class="bg-[#fbfcff] p-4 lg:p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition lg:col-span-1">
+                <div class="bg-[#fbfcff] p-4 lg:p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer group lg:col-span-1">
                     <div class="flex items-center gap-3 mb-1 lg:mb-3">
-                        <div class="w-12 h-12 flex-shrink-0 bg-purple-50 text-purple-700 rounded-lg flex items-center justify-center text-xl lg:text-2xl"><i class="fa-regular fa-file-lines"></i></div>
+                        <div class="w-12 h-12 flex-shrink-0 bg-purple-50 text-purple-700 rounded-lg flex items-center justify-center text-xl lg:text-2xl group-hover:bg-purple-700 group-hover:text-white transition-colors duration-300 group-hover:rotate-6"><i class="fa-regular fa-file-lines"></i></div>
                         <h4 class="font-bold text-gray-900 text-sm lg:text-[13px] xl:text-sm leading-tight">100% Original<span class="hidden lg:inline"><br></span><span class="lg:hidden"> </span>Content</h4>
                     </div>
                     <div class="ml-[60px] lg:ml-0">
                         <p class="text-[11px] lg:text-xs text-gray-500 leading-relaxed">Plagiarism-free content that is 100% original and authentic.</p>
                     </div>
                 </div>
-                <div class="bg-[#fbfcff] p-4 lg:p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition lg:col-span-1">
+                <div class="bg-[#fbfcff] p-4 lg:p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer group lg:col-span-1">
                     <div class="flex items-center gap-3 mb-1 lg:mb-3">
-                        <div class="w-12 h-12 flex-shrink-0 bg-purple-50 text-purple-700 rounded-lg flex items-center justify-center text-xl lg:text-2xl"><i class="fa-solid fa-user-tie"></i></div>
+                        <div class="w-12 h-12 flex-shrink-0 bg-purple-50 text-purple-700 rounded-lg flex items-center justify-center text-xl lg:text-2xl group-hover:bg-purple-700 group-hover:text-white transition-colors duration-300 group-hover:rotate-6"><i class="fa-solid fa-user-tie"></i></div>
                         <h4 class="font-bold text-gray-900 text-sm lg:text-[13px] xl:text-sm leading-tight">Expert<span class="hidden lg:inline"><br></span><span class="lg:hidden"> </span>Writers</h4>
                     </div>
                     <div class="ml-[60px] lg:ml-0">
                         <p class="text-[11px] lg:text-xs text-gray-500 leading-relaxed">Top 1% academic writers with advanced degrees.</p>
                     </div>
                 </div>
-                <div class="bg-[#fbfcff] p-4 lg:p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition lg:col-span-1">
+                <div class="bg-[#fbfcff] p-4 lg:p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer group lg:col-span-1">
                     <div class="flex items-center gap-3 mb-1 lg:mb-3">
-                        <div class="w-12 h-12 flex-shrink-0 bg-purple-50 text-purple-700 rounded-lg flex items-center justify-center text-xl lg:text-2xl"><i class="fa-solid fa-stopwatch"></i></div>
+                        <div class="w-12 h-12 flex-shrink-0 bg-purple-50 text-purple-700 rounded-lg flex items-center justify-center text-xl lg:text-2xl group-hover:bg-purple-700 group-hover:text-white transition-colors duration-300 group-hover:rotate-6"><i class="fa-solid fa-stopwatch"></i></div>
                         <h4 class="font-bold text-gray-900 text-sm lg:text-[13px] xl:text-sm leading-tight">On-Time<span class="hidden lg:inline"><br></span><span class="lg:hidden"> </span>Delivery</h4>
                     </div>
                     <div class="ml-[60px] lg:ml-0">
                         <p class="text-[11px] lg:text-xs text-gray-500 leading-relaxed">Timely delivery before your deadline, every time.</p>
                     </div>
                 </div>
-                <div class="bg-[#fbfcff] p-4 lg:p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition lg:col-span-1">
+                <div class="bg-[#fbfcff] p-4 lg:p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer group lg:col-span-1">
                     <div class="flex items-center gap-3 mb-1 lg:mb-3">
-                        <div class="w-12 h-12 flex-shrink-0 bg-purple-50 text-purple-700 rounded-lg flex items-center justify-center text-xl lg:text-2xl"><i class="fa-solid fa-arrows-rotate"></i></div>
+                        <div class="w-12 h-12 flex-shrink-0 bg-purple-50 text-purple-700 rounded-lg flex items-center justify-center text-xl lg:text-2xl group-hover:bg-purple-700 group-hover:text-white transition-colors duration-300 group-hover:rotate-6"><i class="fa-solid fa-arrows-rotate"></i></div>
                         <h4 class="font-bold text-gray-900 text-sm lg:text-[13px] xl:text-sm leading-tight">Unlimited<span class="hidden lg:inline"><br></span><span class="lg:hidden"> </span>Revisions</h4>
                     </div>
                     <div class="ml-[60px] lg:ml-0">
                         <p class="text-[11px] lg:text-xs text-gray-500 leading-relaxed">Unlimited revisions until you are completely satisfied.</p>
                     </div>
                 </div>
-                <div class="bg-[#fbfcff] p-4 lg:p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition lg:col-span-1">
+                <div class="bg-[#fbfcff] p-4 lg:p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer group lg:col-span-1">
                     <div class="flex items-center gap-3 mb-1 lg:mb-3">
-                        <div class="w-12 h-12 flex-shrink-0 bg-purple-50 text-purple-700 rounded-lg flex items-center justify-center text-xl lg:text-2xl"><i class="fa-solid fa-headset"></i></div>
+                        <div class="w-12 h-12 flex-shrink-0 bg-purple-50 text-purple-700 rounded-lg flex items-center justify-center text-xl lg:text-2xl group-hover:bg-purple-700 group-hover:text-white transition-colors duration-300 group-hover:rotate-6"><i class="fa-solid fa-headset"></i></div>
                         <h4 class="font-bold text-gray-900 text-sm lg:text-[13px] xl:text-sm leading-tight">24/7 Customer<span class="hidden lg:inline"><br></span><span class="lg:hidden"> </span>Support</h4>
                     </div>
                     <div class="ml-[60px] lg:ml-0">
                         <p class="text-[11px] lg:text-xs text-gray-500 leading-relaxed">Our support team is available 24/7 to assist you.</p>
                     </div>
                 </div>
-                <div class="bg-[#fbfcff] p-4 lg:p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition lg:col-span-1">
+                <div class="bg-[#fbfcff] p-4 lg:p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer group lg:col-span-1">
                     <div class="flex items-center gap-3 mb-1 lg:mb-3">
-                        <div class="w-12 h-12 flex-shrink-0 bg-purple-50 text-purple-700 rounded-lg flex items-center justify-center text-xl lg:text-2xl"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="w-12 h-12 flex-shrink-0 bg-purple-50 text-purple-700 rounded-lg flex items-center justify-center text-xl lg:text-2xl group-hover:bg-purple-700 group-hover:text-white transition-colors duration-300 group-hover:rotate-6"><i class="fa-solid fa-shield-halved"></i></div>
                         <h4 class="font-bold text-gray-900 text-sm lg:text-[13px] xl:text-sm leading-tight">Money Back<span class="hidden lg:inline"><br></span><span class="lg:hidden"> </span>Guarantee</h4>
                     </div>
                     <div class="ml-[60px] lg:ml-0">
@@ -238,31 +238,31 @@
             </div>
             
             <div class="lg:w-7/12 grid grid-cols-1 md:grid-cols-2 gap-4 lg:pl-1">
-                <div class="flex gap-4">
-                    <div class="w-12 h-12 flex-shrink-0 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 shadow-sm text-xl"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="flex gap-4 group p-3 rounded-xl hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                    <div class="w-12 h-12 flex-shrink-0 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 shadow-sm text-xl group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300"><i class="fa-solid fa-shield-halved"></i></div>
                     <div>
-                        <h4 class="font-bold text-gray-900 mb-1">Trusted by Thousands</h4>
+                        <h4 class="font-bold text-gray-900 mb-1 group-hover:text-purple-700 transition-colors">Trusted by Thousands</h4>
                         <p class="text-xs text-gray-500 leading-relaxed">Thousands of students across the UK and worldwide trust us for their academic needs.</p>
                     </div>
                 </div>
-                <div class="flex gap-4">
-                    <div class="w-12 h-12 flex-shrink-0 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 shadow-sm text-xl"><i class="fa-solid fa-tag"></i></div>
+                <div class="flex gap-4 group p-3 rounded-xl hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                    <div class="w-12 h-12 flex-shrink-0 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 shadow-sm text-xl group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300"><i class="fa-solid fa-tag"></i></div>
                     <div>
-                        <h4 class="font-bold text-gray-900 mb-1">Affordable Pricing</h4>
+                        <h4 class="font-bold text-gray-900 mb-1 group-hover:text-purple-700 transition-colors">Affordable Pricing</h4>
                         <p class="text-xs text-gray-500 leading-relaxed">Get premium quality help at prices that fit your budget.</p>
                     </div>
                 </div>
-                <div class="flex gap-4">
-                    <div class="w-12 h-12 flex-shrink-0 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 shadow-sm text-xl"><i class="fa-solid fa-award"></i></div>
+                <div class="flex gap-4 group p-3 rounded-xl hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                    <div class="w-12 h-12 flex-shrink-0 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 shadow-sm text-xl group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300"><i class="fa-solid fa-award"></i></div>
                     <div>
-                        <h4 class="font-bold text-gray-900 mb-1">Quality You Can Rely On</h4>
+                        <h4 class="font-bold text-gray-900 mb-1 group-hover:text-purple-700 transition-colors">Quality You Can Rely On</h4>
                         <p class="text-xs text-gray-500 leading-relaxed">We follow strict quality control to deliver the best results.</p>
                     </div>
                 </div>
-                <div class="flex gap-4">
-                    <div class="w-12 h-12 flex-shrink-0 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 shadow-sm text-xl"><i class="fa-solid fa-lock"></i></div>
+                <div class="flex gap-4 group p-3 rounded-xl hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                    <div class="w-12 h-12 flex-shrink-0 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 shadow-sm text-xl group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300"><i class="fa-solid fa-lock"></i></div>
                     <div>
-                        <h4 class="font-bold text-gray-900 mb-1">Confidential & Secure</h4>
+                        <h4 class="font-bold text-gray-900 mb-1 group-hover:text-purple-700 transition-colors">Confidential & Secure</h4>
                         <p class="text-xs text-gray-500 leading-relaxed">Your privacy and information are 100% protected with us.</p>
                     </div>
                 </div>
@@ -286,13 +286,13 @@
 
             <div class="lg:w-3/4 w-full">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 xl:gap-6 w-full">
-                    <div class="w-full bg-[#fbfcff] p-4 xl:p-4 rounded-2xl border border-gray-100 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                    <div class="w-full bg-[#fbfcff] p-4 xl:p-4 rounded-2xl border border-gray-100 shadow-sm flex flex-col justify-between hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
                         <div>
-                            <div class="text-purple-600 text-3xl mb-4 opacity-80"><i class="fa-solid fa-quote-left"></i></div>
-                            <p class="text-gray-600 text-sm leading-relaxed mb-6">The assignment was well-researched, perfectly written, and delivered on time. It helped me score an A+. Highly recommend!</p>
+                            <div class="text-purple-600 text-3xl mb-4 opacity-80 group-hover:text-purple-800 transition-colors duration-300 group-hover:scale-110 transform origin-left"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-6 group-hover:text-gray-800 transition-colors">The assignment was well-researched, perfectly written, and delivered on time. It helped me score an A+. Highly recommend!</p>
                         </div>
                         <div class="flex items-center gap-3">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Emma Taylor" class="w-10 h-10 rounded-full object-cover bg-gray-200">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Emma Taylor" class="w-10 h-10 rounded-full object-cover bg-gray-200 group-hover:ring-2 ring-purple-400 transition-all">
                             <div>
                                 <h5 class="font-bold text-gray-900 text-sm">Emma Taylor</h5>
                                 <p class="text-[10px] text-gray-500">University of Manchester</p>
@@ -300,13 +300,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full bg-[#fbfcff] p-4 xl:p-4 rounded-2xl border border-gray-100 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                    <div class="w-full bg-[#fbfcff] p-4 xl:p-4 rounded-2xl border border-gray-100 shadow-sm flex flex-col justify-between hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
                         <div>
-                            <div class="text-purple-600 text-3xl mb-4 opacity-80"><i class="fa-solid fa-quote-left"></i></div>
-                            <p class="text-gray-600 text-sm leading-relaxed mb-6">Excellent work! The writer followed all instructions and provided original content. Will definitely use your services again.</p>
+                            <div class="text-purple-600 text-3xl mb-4 opacity-80 group-hover:text-purple-800 transition-colors duration-300 group-hover:scale-110 transform origin-left"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-6 group-hover:text-gray-800 transition-colors">Excellent work! The writer followed all instructions and provided original content. Will definitely use your services again.</p>
                         </div>
                         <div class="flex items-center gap-3">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Liam O'Connor" class="w-10 h-10 rounded-full object-cover bg-gray-200">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Liam O'Connor" class="w-10 h-10 rounded-full object-cover bg-gray-200 group-hover:ring-2 ring-purple-400 transition-all">
                             <div>
                                 <h5 class="font-bold text-gray-900 text-sm">Liam O'Connor</h5>
                                 <p class="text-[10px] text-gray-500">University of Leeds</p>
@@ -314,13 +314,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full bg-[#fbfcff] p-4 xl:p-4 rounded-2xl border border-gray-100 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                    <div class="w-full bg-[#fbfcff] p-4 xl:p-4 rounded-2xl border border-gray-100 shadow-sm flex flex-col justify-between hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
                         <div>
-                            <div class="text-purple-600 text-3xl mb-4 opacity-80"><i class="fa-solid fa-quote-left"></i></div>
-                            <p class="text-gray-600 text-sm leading-relaxed mb-6">Amazing experience from start to finish. Support team was helpful and the quality of the work was outstanding!</p>
+                            <div class="text-purple-600 text-3xl mb-4 opacity-80 group-hover:text-purple-800 transition-colors duration-300 group-hover:scale-110 transform origin-left"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-6 group-hover:text-gray-800 transition-colors">Amazing experience from start to finish. Support team was helpful and the quality of the work was outstanding!</p>
                         </div>
                         <div class="flex items-center gap-3">
-                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Olivia Bennett" class="w-10 h-10 rounded-full object-cover bg-gray-200">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Olivia Bennett" class="w-10 h-10 rounded-full object-cover bg-gray-200 group-hover:ring-2 ring-purple-400 transition-all">
                             <div>
                                 <h5 class="font-bold text-gray-900 text-sm">Olivia Bennett</h5>
                                 <p class="text-[10px] text-gray-500">King's College London</p>
@@ -356,40 +356,40 @@
             </div>
 
             <div class="lg:w-2/3 w-full space-y-4">
-                <div class="bg-white border border-gray-100 rounded-xl p-2 flex items-center justify-between cursor-pointer shadow-sm">
+                <div class="bg-white border border-gray-100 rounded-xl p-2 flex items-center justify-between cursor-pointer shadow-sm hover:shadow-md hover:border-purple-200 transition-all duration-300 group hover:-translate-y-1">
                     <div class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg"><i class="fa-solid fa-certificate"></i></div>
-                        <span class="font-bold text-gray-900 text-sm md:text-base">Is the work you provide 100% original?</span>
+                        <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300 group-hover:rotate-12"><i class="fa-solid fa-certificate"></i></div>
+                        <span class="font-bold text-gray-900 text-sm md:text-base group-hover:text-purple-700 transition-colors">Is the work you provide 100% original?</span>
                     </div>
-                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    <svg class="w-5 h-5 text-gray-400 group-hover:text-purple-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </div>
-                <div class="bg-white border border-gray-100 rounded-xl p-2 flex items-center justify-between cursor-pointer shadow-sm">
+                <div class="bg-white border border-gray-100 rounded-xl p-2 flex items-center justify-between cursor-pointer shadow-sm hover:shadow-md hover:border-purple-200 transition-all duration-300 group hover:-translate-y-1">
                     <div class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg"><i class="fa-solid fa-cart-plus"></i></div>
-                        <span class="font-bold text-gray-900 text-sm md:text-base">How do I place an order?</span>
+                        <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300 group-hover:rotate-12"><i class="fa-solid fa-cart-plus"></i></div>
+                        <span class="font-bold text-gray-900 text-sm md:text-base group-hover:text-purple-700 transition-colors">How do I place an order?</span>
                     </div>
-                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    <svg class="w-5 h-5 text-gray-400 group-hover:text-purple-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </div>
-                <div class="bg-white border border-gray-100 rounded-xl p-2 flex items-center justify-between cursor-pointer shadow-sm">
+                <div class="bg-white border border-gray-100 rounded-xl p-2 flex items-center justify-between cursor-pointer shadow-sm hover:shadow-md hover:border-purple-200 transition-all duration-300 group hover:-translate-y-1">
                     <div class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg"><i class="fa-solid fa-arrows-rotate"></i></div>
-                        <span class="font-bold text-gray-900 text-sm md:text-base">Can I request revisions?</span>
+                        <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300 group-hover:rotate-12"><i class="fa-solid fa-arrows-rotate"></i></div>
+                        <span class="font-bold text-gray-900 text-sm md:text-base group-hover:text-purple-700 transition-colors">Can I request revisions?</span>
                     </div>
-                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    <svg class="w-5 h-5 text-gray-400 group-hover:text-purple-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </div>
-                <div class="bg-white border border-gray-100 rounded-xl p-2 flex items-center justify-between cursor-pointer shadow-sm">
+                <div class="bg-white border border-gray-100 rounded-xl p-2 flex items-center justify-between cursor-pointer shadow-sm hover:shadow-md hover:border-purple-200 transition-all duration-300 group hover:-translate-y-1">
                     <div class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg"><i class="fa-solid fa-bolt"></i></div>
-                        <span class="font-bold text-gray-900 text-sm md:text-base">What if I need my order urgently?</span>
+                        <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300 group-hover:rotate-12"><i class="fa-solid fa-bolt"></i></div>
+                        <span class="font-bold text-gray-900 text-sm md:text-base group-hover:text-purple-700 transition-colors">What if I need my order urgently?</span>
                     </div>
-                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    <svg class="w-5 h-5 text-gray-400 group-hover:text-purple-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </div>
-                <div class="bg-white border border-gray-100 rounded-xl p-2 flex items-center justify-between cursor-pointer shadow-sm">
+                <div class="bg-white border border-gray-100 rounded-xl p-2 flex items-center justify-between cursor-pointer shadow-sm hover:shadow-md hover:border-purple-200 transition-all duration-300 group hover:-translate-y-1">
                     <div class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg"><i class="fa-solid fa-hand-holding-dollar"></i></div>
-                        <span class="font-bold text-gray-900 text-sm md:text-base">Do you offer refunds?</span>
+                        <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300 group-hover:rotate-12"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                        <span class="font-bold text-gray-900 text-sm md:text-base group-hover:text-purple-700 transition-colors">Do you offer refunds?</span>
                     </div>
-                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    <svg class="w-5 h-5 text-gray-400 group-hover:text-purple-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </div>
             </div>
         </div>

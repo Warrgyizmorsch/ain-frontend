@@ -30,17 +30,17 @@
             </p>
             
             <div class="flex flex-wrap gap-4 sm:gap-6 mt-8">
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <div><p class="font-bold text-gray-900"><span class="stat-counter" data-target="25000" data-suffix="+">20000</span></p><p class="text-xs text-gray-500">Students Supported</p></div>
+                <div class="flex items-center gap-3 group cursor-pointer hover:-translate-y-1 hover:bg-purple-50 p-2 rounded-lg transition-all duration-300 border border-transparent hover:border-purple-100">
+                    <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold group-hover:bg-purple-600 group-hover:text-white group-hover:scale-110 transition-all duration-300"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div><p class="font-bold text-gray-900 group-hover:text-purple-700 transition-colors"><span class="stat-counter" data-target="25000" data-suffix="+">20000</span></p><p class="text-xs text-gray-500">Students Supported</p></div>
                 </div>
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold"><i class="fa-solid fa-users"></i></div>
-                    <div><p class="font-bold text-gray-900"><span class="stat-counter" data-target="150" data-suffix="+">70</span></p><p class="text-xs text-gray-500">Subject Experts</p></div>
+                <div class="flex items-center gap-3 group cursor-pointer hover:-translate-y-1 hover:bg-purple-50 p-2 rounded-lg transition-all duration-300 border border-transparent hover:border-purple-100">
+                    <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold group-hover:bg-purple-600 group-hover:text-white group-hover:scale-110 transition-all duration-300"><i class="fa-solid fa-users"></i></div>
+                    <div><p class="font-bold text-gray-900 group-hover:text-purple-700 transition-colors"><span class="stat-counter" data-target="150" data-suffix="+">70</span></p><p class="text-xs text-gray-500">Subject Experts</p></div>
                 </div>
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold"><i class="fa-solid fa-medal"></i></div>
-                    <div><p class="font-bold text-gray-900"><span class="stat-counter" data-target="98" data-suffix="%">50</span></p><p class="text-xs text-gray-500">On-Time Delivery</p></div>
+                <div class="flex items-center gap-3 group cursor-pointer hover:-translate-y-1 hover:bg-purple-50 p-2 rounded-lg transition-all duration-300 border border-transparent hover:border-purple-100">
+                    <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold group-hover:bg-purple-600 group-hover:text-white group-hover:scale-110 transition-all duration-300"><i class="fa-solid fa-medal"></i></div>
+                    <div><p class="font-bold text-gray-900 group-hover:text-purple-700 transition-colors"><span class="stat-counter" data-target="98" data-suffix="%">50</span></p><p class="text-xs text-gray-500">On-Time Delivery</p></div>
                 </div>
             </div>
 
@@ -65,17 +65,17 @@
                 Assignment In Need was founded with a simple goal - to provide students with accessible, reliable and high-quality academic support. We understand the challenges students face, which is why we've built a platform that connects you with the best academic experts who deliver top-notch assistance tailored to your needs.
             </p>
             <ul class="space-y-4">
-                <li class="flex items-start gap-3">
-                    <svg class="w-6 h-6 text-purple-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                    <span class="text-gray-700 font-medium">Trusted by students across the UK and worldwide</span>
+                <li class="flex items-start gap-3 group cursor-pointer hover:translate-x-2 transition-transform duration-300">
+                    <svg class="w-6 h-6 text-purple-600 flex-shrink-0 group-hover:text-purple-800 group-hover:scale-110 transition-all duration-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="text-gray-700 font-medium group-hover:text-purple-700 transition-colors">Trusted by students across the UK and worldwide</span>
                 </li>
-                <li class="flex items-start gap-3">
-                    <svg class="w-6 h-6 text-purple-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                    <span class="text-gray-700 font-medium">A team of qualified academic experts</span>
+                <li class="flex items-start gap-3 group cursor-pointer hover:translate-x-2 transition-transform duration-300">
+                    <svg class="w-6 h-6 text-purple-600 flex-shrink-0 group-hover:text-purple-800 group-hover:scale-110 transition-all duration-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="text-gray-700 font-medium group-hover:text-purple-700 transition-colors">A team of qualified academic experts</span>
                 </li>
-                <li class="flex items-start gap-3">
-                    <svg class="w-6 h-6 text-purple-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                    <span class="text-gray-700 font-medium">Commitment to quality, originality and confidentiality</span>
+                <li class="flex items-start gap-3 group cursor-pointer hover:translate-x-2 transition-transform duration-300">
+                    <svg class="w-6 h-6 text-purple-600 flex-shrink-0 group-hover:text-purple-800 group-hover:scale-110 transition-all duration-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="text-gray-700 font-medium group-hover:text-purple-700 transition-colors">Commitment to quality, originality and confidentiality</span>
                 </li>
             </ul>
         </div>
@@ -236,24 +236,24 @@
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16">
         <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">More Than A Writing Platform</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
-                <div class="w-16 h-16 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-3xl mb-4"><i class="fa-solid fa-book-open"></i></div>
-                <h4 class="font-bold text-gray-900 mb-2">Academic Guidance</h4>
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
+                <div class="w-16 h-16 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-3xl mb-4 group-hover:bg-purple-600 group-hover:text-white group-hover:rotate-6 group-hover:scale-110 transition-all duration-300"><i class="fa-solid fa-book-open"></i></div>
+                <h4 class="font-bold text-gray-900 mb-2 group-hover:text-purple-700 transition-colors">Academic Guidance</h4>
                 <p class="text-xs text-gray-500 leading-relaxed">Get expert help for assignments, essays, dissertations and more tailored to your needs.</p>
             </div>
-            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
-                <div class="w-16 h-16 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center text-3xl mb-4"><i class="fa-solid fa-comments"></i></div>
-                <h4 class="font-bold text-gray-900 mb-2">Referencing Assistance</h4>
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
+                <div class="w-16 h-16 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center text-3xl mb-4 group-hover:bg-orange-500 group-hover:text-white group-hover:rotate-6 group-hover:scale-110 transition-all duration-300"><i class="fa-solid fa-comments"></i></div>
+                <h4 class="font-bold text-gray-900 mb-2 group-hover:text-orange-500 transition-colors">Referencing Assistance</h4>
                 <p class="text-xs text-gray-500 leading-relaxed">Accurate referencing in APA, Harvard, MLA, OSCOLA and other major styles.</p>
             </div>
-            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
-                <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-3xl mb-4"><i class="fa-solid fa-chalkboard-user"></i></div>
-                <h4 class="font-bold text-gray-900 mb-2">Expert Consultation</h4>
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
+                <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-3xl mb-4 group-hover:bg-green-600 group-hover:text-white group-hover:rotate-6 group-hover:scale-110 transition-all duration-300"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <h4 class="font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">Expert Consultation</h4>
                 <p class="text-xs text-gray-500 leading-relaxed">Connect with subject specialists for clarification and in-depth understanding.</p>
             </div>
-            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
-                <div class="w-16 h-16 bg-blue-100 text-blue-500 rounded-full flex items-center justify-center text-3xl mb-4"><i class="fa-solid fa-folder-open"></i></div>
-                <h4 class="font-bold text-gray-900 mb-2">Student Resources</h4>
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
+                <div class="w-16 h-16 bg-blue-100 text-blue-500 rounded-full flex items-center justify-center text-3xl mb-4 group-hover:bg-blue-500 group-hover:text-white group-hover:rotate-6 group-hover:scale-110 transition-all duration-300"><i class="fa-solid fa-folder-open"></i></div>
+                <h4 class="font-bold text-gray-900 mb-2 group-hover:text-blue-500 transition-colors">Student Resources</h4>
                 <p class="text-xs text-gray-500 leading-relaxed">Access samples, guides, writing tips and tools to improve your academic skills.</p>
             </div>
         </div>
@@ -262,35 +262,35 @@
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10">
         <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Why Students Trust Us</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 text-center">
-            <div class="flex flex-col items-center bg-purple-50 p-4 sm:p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-purple-100">
-                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-purple-600 text-3xl mb-3 shadow-sm"><i class="fa-solid fa-shield-halved"></i></div>
-                <p class="font-bold text-gray-900 text-sm"><span class="stat-counter" data-target="100" data-suffix="%">0</span></p>
-                <p class="text-xs text-gray-500">Original Work</p>
+            <div class="flex flex-col items-center bg-purple-50 p-4 sm:p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-purple-100 group cursor-pointer hover:bg-purple-100">
+                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-purple-600 text-3xl mb-3 shadow-sm group-hover:bg-purple-600 group-hover:text-black group-hover:scale-110 transition-all duration-300"><i class="fa-solid fa-shield-halved"></i></div>
+                <p class="font-bold text-gray-900 text-sm group-hover:text-purple-800"><span class="stat-counter" data-target="100" data-suffix="%">0</span></p>
+                <p class="text-xs text-gray-500 group-hover:text-gray-700">Original Work</p>
             </div>
-            <div class="flex flex-col items-center bg-purple-50 p-4 sm:p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-purple-100">
-                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-purple-600 text-3xl mb-3 shadow-sm"><i class="fa-solid fa-infinity"></i></div>
-                <p class="font-bold text-gray-900 text-sm">Unlimited</p>
-                <p class="text-xs text-gray-500">Revisions</p>
+            <div class="flex flex-col items-center bg-purple-50 p-4 sm:p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-purple-100 group cursor-pointer hover:bg-purple-100">
+                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-purple-600 text-3xl mb-3 shadow-sm group-hover:bg-purple-600 group-hover:text-black group-hover:scale-110 transition-all duration-300"><i class="fa-solid fa-infinity"></i></div>
+                <p class="font-bold text-gray-900 text-sm group-hover:text-purple-800">Unlimited</p>
+                <p class="text-xs text-gray-500 group-hover:text-gray-700">Revisions</p>
             </div>
-            <div class="flex flex-col items-center bg-purple-50 p-4 sm:p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-purple-100">
-                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-purple-600 text-3xl mb-3 shadow-sm"><i class="fa-solid fa-headset"></i></div>
-                <p class="font-bold text-gray-900 text-sm"><span class="stat-counter" data-target="24" data-suffix="/7">0</span></p>
-                <p class="text-xs text-gray-500">Support</p>
+            <div class="flex flex-col items-center bg-purple-50 p-4 sm:p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-purple-100 group cursor-pointer hover:bg-purple-100">
+                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-purple-600 text-3xl mb-3 shadow-sm group-hover:bg-purple-600 group-hover:text-black group-hover:scale-110 transition-all duration-300"><i class="fa-solid fa-headset"></i></div>
+                <p class="font-bold text-gray-900 text-sm group-hover:text-purple-800"><span class="stat-counter" data-target="24" data-suffix="/7">0</span></p>
+                <p class="text-xs text-gray-500 group-hover:text-gray-700">Support</p>
             </div>
-            <div class="flex flex-col items-center bg-purple-50 p-4 sm:p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-purple-100">
-                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-purple-600 text-3xl mb-3 shadow-sm"><i class="fa-solid fa-lock"></i></div>
-                <p class="font-bold text-gray-900 text-sm">Confidential</p>
-                <p class="text-xs text-gray-500">Service</p>
+            <div class="flex flex-col items-center bg-purple-50 p-4 sm:p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-purple-100 group cursor-pointer hover:bg-purple-100">
+                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-purple-600 text-3xl mb-3 shadow-sm group-hover:bg-purple-600 group-hover:text-black group-hover:scale-110 transition-all duration-300"><i class="fa-solid fa-lock"></i></div>
+                <p class="font-bold text-gray-900 text-sm group-hover:text-purple-800">Confidential</p>
+                <p class="text-xs text-gray-500 group-hover:text-gray-700">Service</p>
             </div>
-            <div class="flex flex-col items-center bg-purple-50 p-4 sm:p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-purple-100">
-                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-purple-600 text-3xl mb-3 shadow-sm"><i class="fa-solid fa-user-tie"></i></div>
-                <p class="font-bold text-gray-900 text-sm">Subject</p>
-                <p class="text-xs text-gray-500">Experts</p>
+            <div class="flex flex-col items-center bg-purple-50 p-4 sm:p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-purple-100 group cursor-pointer hover:bg-purple-100">
+                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-purple-600 text-3xl mb-3 shadow-sm group-hover:bg-purple-600 group-hover:text-black group-hover:scale-110 transition-all duration-300"><i class="fa-solid fa-user-tie"></i></div>
+                <p class="font-bold text-gray-900 text-sm group-hover:text-purple-800">Subject</p>
+                <p class="text-xs text-gray-500 group-hover:text-gray-700">Experts</p>
             </div>
-            <div class="flex flex-col items-center bg-purple-50 p-4 sm:p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-purple-100">
-                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-purple-600 text-3xl mb-3 shadow-sm"><i class="fa-solid fa-stopwatch"></i></div>
-                <p class="font-bold text-gray-900 text-sm">On-Time</p>
-                <p class="text-xs text-gray-500">Delivery</p>
+            <div class="flex flex-col items-center bg-purple-50 p-4 sm:p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-purple-100 group cursor-pointer hover:bg-purple-100">
+                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-purple-600 text-3xl mb-3 shadow-sm group-hover:bg-purple-600 group-hover:text-black group-hover:scale-110 transition-all duration-300"><i class="fa-solid fa-stopwatch"></i></div>
+                <p class="font-bold text-gray-900 text-sm group-hover:text-purple-800">On-Time</p>
+                <p class="text-xs text-gray-500 group-hover:text-gray-700">Delivery</p>
             </div>
         </div>
     </section>
@@ -298,41 +298,41 @@
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16">
         <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Meet Our Academic Experts</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex items-center gap-4">
-                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sophia Adams" class="w-12 h-12 rounded-full object-cover">
+            <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex items-center gap-4 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sophia Adams" class="w-12 h-12 rounded-full object-cover group-hover:ring-2 ring-purple-400 transition-all">
                 <div>
-                    <h5 class="font-bold text-sm text-gray-900">Sophia Adams</h5>
+                    <h5 class="font-bold text-sm text-gray-900 group-hover:text-purple-700 transition-colors">Sophia Adams</h5>
                     <p class="text-xs text-gray-500">Marketing Expert</p>
                     <div class="text-yellow-400 text-xs mt-1">★★★★★ <span class="text-gray-500 ml-1">4.9</span></div>
                 </div>
             </div>
-            <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex items-center gap-4">
-                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. James Wilson" class="w-12 h-12 rounded-full object-cover">
+            <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex items-center gap-4 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. James Wilson" class="w-12 h-12 rounded-full object-cover group-hover:ring-2 ring-purple-400 transition-all">
                 <div>
-                    <h5 class="font-bold text-sm text-gray-900">Dr. James Wilson</h5>
+                    <h5 class="font-bold text-sm text-gray-900 group-hover:text-purple-700 transition-colors">Dr. James Wilson</h5>
                     <p class="text-xs text-gray-500">Finance Expert</p>
                     <div class="text-yellow-400 text-xs mt-1">★★★★★ <span class="text-gray-500 ml-1">4.8</span></div>
                 </div>
             </div>
-            <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex items-center gap-4">
-                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Olivia Bennett" class="w-12 h-12 rounded-full object-cover">
+            <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex items-center gap-4 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Olivia Bennett" class="w-12 h-12 rounded-full object-cover group-hover:ring-2 ring-purple-400 transition-all">
                 <div>
-                    <h5 class="font-bold text-sm text-gray-900">Olivia Bennett</h5>
+                    <h5 class="font-bold text-sm text-gray-900 group-hover:text-purple-700 transition-colors">Olivia Bennett</h5>
                     <p class="text-xs text-gray-500">Management Expert</p>
                     <div class="text-yellow-400 text-xs mt-1">★★★★★ <span class="text-gray-500 ml-1">4.9</span></div>
                 </div>
             </div>
-            <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex items-center gap-4">
-                <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Dr. Daniel Harris" class="w-12 h-12 rounded-full object-cover">
+            <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex items-center gap-4 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
+                <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Dr. Daniel Harris" class="w-12 h-12 rounded-full object-cover group-hover:ring-2 ring-purple-400 transition-all">
                 <div>
-                    <h5 class="font-bold text-sm text-gray-900">Dr. Daniel Harris</h5>
+                    <h5 class="font-bold text-sm text-gray-900 group-hover:text-purple-700 transition-colors">Dr. Daniel Harris</h5>
                     <p class="text-xs text-gray-500">Economics Expert</p>
                     <div class="text-yellow-400 text-xs mt-1">★★★★<span class="text-gray-300">★</span> <span class="text-gray-500 ml-1">4.7</span></div>
                 </div>
             </div>
-            <div class="bg-purple-50 p-4 rounded-xl border border-purple-100 shadow-sm flex items-center justify-center cursor-pointer hover:bg-purple-100 transition text-center">
-                <a href="#" class="font-bold text-sm text-purple-700 flex flex-col items-center">
-                    View All<br>Experts <span class="mt-1">&rarr;</span>
+            <div class="bg-purple-50 p-4 rounded-xl border border-purple-100 shadow-sm flex items-center justify-center cursor-pointer hover:bg-purple-600 group transition-all duration-300 text-center hover:shadow-lg hover:-translate-y-1">
+                <a href="#" class="font-bold text-sm text-purple-700 group-hover:text-white transition-colors flex flex-col items-center">
+                    View All<br>Experts <span class="mt-1 group-hover:translate-x-1 transition-transform">&rarr;</span>
                 </a>
             </div>
         </div>
