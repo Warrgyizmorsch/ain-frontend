@@ -3,15 +3,6 @@
 @section('content')
 	<style>
 		/* -----------------------
-				   General Reset Overrides
-				--------------------------*/
-		img {
-			display: inline-block !important;
-			max-width: 100%;
-			height: auto !important;
-		}
-
-		/* -----------------------
 				   Blog Header
 				--------------------------*/
 		.blog-header {
@@ -343,11 +334,6 @@
 				padding: 20px;
 			}
 
-			.col-8,
-			.col-4 {
-				width: 100%;
-			}
-
 			.blog-meta {
 				flex-direction: column;
 				align-items: flex-start;
@@ -396,10 +382,6 @@
 				margin: 0 auto;
 				padding: 10px;
 				box-sizing: border-box;
-			}
-
-			.row {
-				display: revert-layer;
 			}
 
 			.featured-blog-img {

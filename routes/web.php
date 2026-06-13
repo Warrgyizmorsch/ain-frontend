@@ -232,6 +232,21 @@ Route::get('/MyOrders', [OrderController::class, 'myOrder'])->middleware(['auth'
 //     return view('frontend/header/company/about', compact('data'));
 
 // });
+// Route::get('/what-we-are', function () {
+//     $data = [
+//         'title' => 'About Assignment in Need | Your Assignment Help Uk Partner',
+//         'description' => 'Learn about our Services writers, why choose us, and why Assignment In Need is trusted for quality assignment help  services for UK students, plagiarism-free and AI-free assignment help',
+//         'keyword' => '',
+//         'canonical' => 'https://www.assignnmentinneed.com/what-we-are',
+//     ];
+// 
+//     $data['expert'] = Experts::distinct('service', 'subject') // Avoid repeated subjects
+//         ->take(10) // Limit to 10 experts
+//         ->get();
+// 
+//     return view('frontend.header.company.what-we-are', compact('data'));
+// });
+
 Route::get('/what-we-are', function () {
     $data = [
         'title' => 'About Assignment in Need | Your Assignment Help Uk Partner',
@@ -244,8 +259,58 @@ Route::get('/what-we-are', function () {
         ->take(10) // Limit to 10 experts
         ->get();
 
-    return view('frontend.header.company.what-we-are', compact('data'));
+    return view('frontend.header.company.aboutusnew', compact('data'));
 });
+
+// Route::get('/aboutusnew', function () {
+//     $data = [
+//         'title' => 'About Us - New Demo',
+//         'description' => 'Demo About Us Page',
+//         'keyword' => '',
+//         'canonical' => 'https://www.assignnmentinneed.com/aboutusnew',
+//     ];
+//     return view('frontend.header.company.aboutusnew', compact('data'));
+// });
+
+Route::get('free-samples', function () {
+    $data = [
+        'title' => 'Sample New Demo',
+        'description' => 'Demo Sample Page',
+        'keyword' => '',
+        'canonical' => 'https://www.assignnmentinneed.com/free-samples',
+    ];
+    return view('frontend.header.company.samplenew', compact('data'));
+})->name('free-samples');
+
+// Route::get('/samplenew', function () {
+//     $data = [
+//         'title' => 'Sample New Demo',
+//         'description' => 'Demo Sample Page',
+//         'keyword' => '',
+//         'canonical' => 'https://www.assignnmentinneed.com/samplenew',
+//     ];
+//     return view('frontend.header.company.samplenew', compact('data'));
+// });
+
+Route::get('/pricing', function () {
+    $data = [
+        'title' => 'Pricing New Demo',
+        'description' => 'Demo Pricing Page',
+        'keyword' => '',
+        'canonical' => 'https://www.assignnmentinneed.com/pricing',
+    ];
+    return view('frontend.header.company.pricingnew', compact('data'));
+})->name('pricing');
+
+// Route::get('/pricingnew', function () {
+//     $data = [
+//         'title' => 'Pricing New Demo',
+//         'description' => 'Demo Pricing Page',
+//         'keyword' => '',
+//         'canonical' => 'https://www.assignnmentinneed.com/pricingnew',
+//     ];
+//     return view('frontend.header.company.pricingnew', compact('data'));
+// });
 
 
 Route::get('/assignment-help-expert-uk', function () {
@@ -767,6 +832,24 @@ Route::get('/business-assignment-writing-help', function () {
 });
 
 
+// Route::get('/engineering-assignment-writing-help', function () {
+//     $schemaService = new SchemaService();
+//     $data = config('dataload.engineering-assignment-writing-help.meta');
+//     $priceRanges = config('dataload.engineering-assignment-writing-help.price_ranges');
+//     $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
+//     $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.engineering-assignment-writing-help.faqs'));
+//     $data["sample"] = Sample::with('categotyData')
+//         ->orderBy('created_at', 'desc') // Order by the most recent records
+//         ->take(2) // Limit the results to 2 records
+//         ->get();
+//     $data['expert'] = Experts::
+//         where('subject', 'Engineering')
+//         ->distinct('service') // Avoid repeated subjects
+//         ->take(10) // Limit to 10 experts
+//         ->get();
+//     return view('frontend.header.services.sub.engineering-assignment-writing-help', compact('data'));
+// });
+
 Route::get('/engineering-assignment-writing-help', function () {
     $schemaService = new SchemaService();
     $data = config('dataload.engineering-assignment-writing-help.meta');
@@ -782,8 +865,28 @@ Route::get('/engineering-assignment-writing-help', function () {
         ->distinct('service') // Avoid repeated subjects
         ->take(10) // Limit to 10 experts
         ->get();
-    return view('frontend.header.services.sub.engineering-assignment-writing-help', compact('data'));
+    return view('frontend.header.services.sub.nik-new-subject', compact('data'));
 });
+
+// Demo route for renovated subject page
+// Route::get('/new-subjectpage', function () {
+//     $schemaService = new SchemaService();
+//     // Using engineering meta as demo data
+//     $data = config('dataload.engineering-assignment-writing-help.meta');
+//     $priceRanges = config('dataload.engineering-assignment-writing-help.price_ranges');
+//     $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
+//     $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.engineering-assignment-writing-help.faqs'));
+//     $data["sample"] = Sample::with('categotyData')
+//         ->orderBy('created_at', 'desc')
+//         ->take(2)
+//         ->get();
+//     $data['expert'] = Experts::
+//         where('subject', 'Engineering')
+//         ->distinct('service')
+//         ->take(10)
+//         ->get();
+//     return view('frontend.header.services.sub.nik-new-subject', compact('data'));
+// });
 
 // cheap page
 Route::get('/cheap-assignment-writing-help', function () {
@@ -3498,7 +3601,7 @@ Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
 Route::get('/blog/{slug}', [HomeController::class, 'getBlogBySlug']);
 Route::get('/blog-sitemap', [SitemapController::class, 'blogSitemap'])->name('blog-sitemap');
 Route::get('/sample-sitemap', [SitemapController::class, 'freeSampleSitemap'])->name('sample-sitemap');
-Route::get('free-samples', [SampleController::class, 'indexpage'])->name('free-samples');
+// Route::get('free-samples', [SampleController::class, 'indexpage'])->name('free-samples');
 Route::get('free-samples/{title}', [SampleController::class, 'categoryDeatails'])->name('free-samples/title');
 Route::get('free-samples/{title}/{subject}', [SampleController::class, 'sampleDeatails'])->name('free-samples/title/subject');
 Route::get('downloads-sample/{slug}', [SampleController::class, 'downloadSample'])->name('downloads-sample/slug');
@@ -3511,7 +3614,7 @@ Route::get('/writers', [ExpertController::class, 'expert'])->name('writers');
 Route::get('/writers/{slug}', [ExpertController::class, 'expertProfile'])->name('writers.profile');
 Route::get('/load-experts', [ExpertController::class, 'loadExperts']);
 // Route::get('/dashboard', [HomeController::class, 'dashboard'])->middleware(['auth'])->name('dashboard');
-Route::get('/pricing', [HomeController::class, 'pricing'])->name('pricing');
+// Route::get('/pricing', [HomeController::class, 'pricing'])->name('pricing');
 
 
 
