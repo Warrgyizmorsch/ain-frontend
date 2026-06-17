@@ -538,38 +538,62 @@
         </div>
 
         <!-- Icons Grid (Mobile Bottom, Desktop Middle) -->
-        <div class="flex flex-wrap lg:flex-nowrap gap-y-7 relative z-10 text-center lg:flex-1 lg:justify-end lg:pr-[150px] lg:divide-x lg:divide-white/20">
+        <div class="grid grid-cols-4 lg:flex lg:flex-nowrap gap-y-8 gap-x-2 relative z-10 text-center lg:flex-1 lg:justify-end lg:pr-[150px] lg:divide-x lg:divide-white/20">
           
-          <!-- Mobile Top Row (4 items), Desktop Row (all) -->
-          <div class="w-1/4 lg:w-auto flex flex-col items-center px-1 lg:px-6">
-            <i class="fas fa-file-signature text-2xl lg:text-[32px] mb-2 lg:mb-3 text-white opacity-90"></i>
-            <span class="text-[9px] lg:text-[10px] uppercase font-bold text-white leading-tight">Plagiarism<br/>Report</span>
-          </div>
-          <div class="w-1/4 lg:w-auto flex flex-col items-center px-1 lg:px-6">
-            <i class="fas fa-robot text-2xl lg:text-[32px] mb-2 lg:mb-3 text-white opacity-90"></i>
-            <span class="text-[9px] lg:text-[10px] uppercase font-bold text-white leading-tight">AI Report</span>
-          </div>
-          <div class="w-1/4 lg:w-auto flex flex-col items-center px-1 lg:px-6">
-            <i class="fas fa-file-alt text-2xl lg:text-[32px] mb-2 lg:mb-3 text-white opacity-90"></i>
-            <span class="text-[9px] lg:text-[10px] uppercase font-bold text-white leading-tight">Title<br/>Page</span>
-          </div>
-          <div class="w-1/4 lg:w-auto flex flex-col items-center px-1 lg:px-6">
-            <i class="fas fa-book text-2xl lg:text-[32px] mb-2 lg:mb-3 text-white opacity-90"></i>
-            <span class="text-[9px] lg:text-[10px] uppercase font-bold text-white leading-tight">Bibliography</span>
+          <!-- Item 1 -->
+          <div class="flex flex-col items-center px-1 lg:px-6">
+            <div class="h-8 lg:h-10 flex items-center justify-center mb-2 lg:mb-3">
+              <i class="fas fa-file-signature text-2xl lg:text-[32px] text-white opacity-95"></i>
+            </div>
+            <span class="text-[10px] lg:text-[11px] uppercase font-extrabold text-white leading-tight tracking-wide">Plagiarism<br/>Report</span>
           </div>
 
-          <!-- Mobile Bottom Row (3 items), Desktop Row (all) -->
-          <div class="w-1/3 lg:w-auto flex flex-col items-center px-1 lg:px-6">
-            <i class="fas fa-sync-alt text-2xl lg:text-[32px] mb-2 lg:mb-3 text-white opacity-90"></i>
-            <span class="text-[9px] lg:text-[10px] uppercase font-bold text-white leading-tight">Unlimited<br/>Revisions</span>
+          <!-- Item 2 -->
+          <div class="flex flex-col items-center px-1 lg:px-6">
+            <div class="h-8 lg:h-10 flex items-center justify-center mb-2 lg:mb-3">
+              <i class="fas fa-robot text-2xl lg:text-[32px] text-white opacity-95"></i>
+            </div>
+            <span class="text-[10px] lg:text-[11px] uppercase font-extrabold text-white leading-tight tracking-wide">AI Report</span>
           </div>
-          <div class="w-1/3 lg:w-auto flex flex-col items-center px-1 lg:px-6">
-            <i class="fas fa-align-left text-2xl lg:text-[32px] mb-2 lg:mb-3 text-white opacity-90"></i>
-            <span class="text-[9px] lg:text-[10px] uppercase font-bold text-white leading-tight">Formatting</span>
+
+          <!-- Item 3 -->
+          <div class="flex flex-col items-center px-1 lg:px-6">
+            <div class="h-8 lg:h-10 flex items-center justify-center mb-2 lg:mb-3">
+              <i class="fas fa-file-alt text-2xl lg:text-[32px] text-white opacity-95"></i>
+            </div>
+            <span class="text-[10px] lg:text-[11px] uppercase font-extrabold text-white leading-tight tracking-wide">Title<br/>Page</span>
           </div>
-          <div class="w-1/3 lg:w-auto flex flex-col items-center px-1 lg:px-6">
-            <i class="fas fa-user-clock text-2xl lg:text-[32px] mb-2 lg:mb-3 text-white opacity-90"></i>
-            <span class="text-[9px] lg:text-[10px] uppercase font-bold text-white leading-tight">24/7<br/>Support</span>
+
+          <!-- Item 4 -->
+          <div class="flex flex-col items-center px-1 lg:px-6">
+            <div class="h-8 lg:h-10 flex items-center justify-center mb-2 lg:mb-3">
+              <i class="fas fa-book text-2xl lg:text-[32px] text-white opacity-95"></i>
+            </div>
+            <span class="text-[10px] lg:text-[11px] uppercase font-extrabold text-white leading-tight tracking-wide">Bibliography</span>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="flex flex-col items-center px-1 lg:px-6 col-span-1 lg:col-span-auto">
+            <div class="h-8 lg:h-10 flex items-center justify-center mb-2 lg:mb-3">
+              <i class="fas fa-sync-alt text-2xl lg:text-[32px] text-white opacity-95"></i>
+            </div>
+            <span class="text-[10px] lg:text-[11px] uppercase font-extrabold text-white leading-tight tracking-wide">Unlimited<br/>Revisions</span>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="flex flex-col items-center px-1 lg:px-6 col-span-1 lg:col-span-auto">
+            <div class="h-8 lg:h-10 flex items-center justify-center mb-2 lg:mb-3">
+              <i class="fas fa-align-left text-2xl lg:text-[32px] text-white opacity-95"></i>
+            </div>
+            <span class="text-[10px] lg:text-[11px] uppercase font-extrabold text-white leading-tight tracking-wide">Formatting</span>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="flex flex-col items-center px-1 lg:px-6 col-span-2 lg:col-span-auto lg:col-start-auto">
+            <div class="h-8 lg:h-10 flex items-center justify-center mb-2 lg:mb-3">
+              <i class="fas fa-user-clock text-2xl lg:text-[32px] text-white opacity-95"></i>
+            </div>
+            <span class="text-[10px] lg:text-[11px] uppercase font-extrabold text-white leading-tight tracking-wide">24/7<br/>Support</span>
           </div>
 
         </div>
