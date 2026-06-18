@@ -13,7 +13,7 @@
 </style>
 <script src="https://cdn.tailwindcss.com"></script>
 <main class="w-full font-sans text-gray-800">
-    <section class="relative overflow-hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16 flex flex-col lg:flex-row items-center justify-between">
+    <section class="relative overflow-hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-8 flex flex-col lg:flex-row items-center justify-between">
         <!-- Mobile Background Image -->
         <div class="absolute inset-0 z-0 lg:hidden flex justify-center items-center opacity-10 pointer-events-none">
             <img src="public\new-about-us-img\hero1.png" alt="" class="w-[150%] max-w-none h-auto object-contain" style="-webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%); mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);">
@@ -54,7 +54,7 @@
         </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16 flex flex-col lg:flex-row items-center gap-12">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-8 flex flex-col lg:flex-row items-center gap-12">
         <div class="lg:w-1/2">
             <img src="public\new-about-us-img\test1.png" alt="Students studying" class="rounded-2xl shadow-xl object-cover w-full h-[400px]">
         </div>
@@ -81,7 +81,7 @@
         </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-8">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 md:py-4">
         <div class="bg-[#1e105a] rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between text-white relative overflow-hidden">
             <!-- Stars -->
             <div class="absolute inset-0 pointer-events-none">
@@ -124,7 +124,7 @@
         </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16 text-center">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-8 text-center">
         <h2 class="text-3xl font-bold text-gray-900 mb-12">How It Works</h2>
         <div class="bg-white md:bg-transparent rounded-2xl md:rounded-none  p-6 md:p-0 flex flex-col md:flex-row justify-between items-center gap-0 md:gap-4 w-full ">
             
@@ -215,7 +215,7 @@
         </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 md:py-5">
         <div class="bg-purple-50 rounded-2xl p-10 flex flex-col md:flex-row items-center gap-8">
             <div class="md:w-1/2">
                 <span class="text-xs font-bold text-purple-600 uppercase tracking-wider bg-white px-3 py-1 rounded-full shadow-sm">Our Mission</span>
@@ -233,7 +233,7 @@
         </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-8">
         <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">More Than A Writing Platform</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
@@ -259,7 +259,7 @@
         </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 md:py-5">
         <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Why Students Trust Us</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 text-center">
             <div class="flex flex-col items-center bg-purple-50 p-4 sm:p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-purple-100 group cursor-pointer hover:bg-purple-100">
@@ -295,50 +295,57 @@
         </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-8">
         <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Meet Our Academic Experts</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex items-center gap-4 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
-                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sophia Adams" class="w-12 h-12 rounded-full object-cover group-hover:ring-2 ring-purple-400 transition-all">
-                <div>
-                    <h5 class="font-bold text-sm text-gray-900 group-hover:text-purple-700 transition-colors">Sophia Adams</h5>
-                    <p class="text-xs text-gray-500">Marketing Expert</p>
-                    <div class="text-yellow-400 text-xs mt-1">★★★★★ <span class="text-gray-500 ml-1">4.9</span></div>
-                </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Expert 1 -->
+            <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex flex-col items-center text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sophia Adams" class="w-20 h-20 rounded-full object-cover group-hover:ring-4 ring-purple-400 transition-all mb-4">
+                <h5 class="font-bold text-base text-gray-900 group-hover:text-purple-700 transition-colors">Sophia Adams</h5>
+                <p class="text-xs text-purple-600 font-semibold mb-2">Marketing Expert</p>
+                <div class="text-yellow-400 text-xs mb-3">★★★★★ <span class="text-gray-500 ml-1">4.9</span></div>
+                <p class="text-xs text-gray-500 leading-relaxed mb-6">Specializes in digital strategy, branding, and market research with 5+ years of academic writing experience.</p>
+                <a href="#" class="mt-auto w-full py-2 bg-purple-700 hover:bg-purple-800 text-white rounded-lg text-xs font-bold transition shadow-sm text-center">Hire Now &rarr;</a>
             </div>
-            <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex items-center gap-4 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
-                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. James Wilson" class="w-12 h-12 rounded-full object-cover group-hover:ring-2 ring-purple-400 transition-all">
-                <div>
-                    <h5 class="font-bold text-sm text-gray-900 group-hover:text-purple-700 transition-colors">Dr. James Wilson</h5>
-                    <p class="text-xs text-gray-500">Finance Expert</p>
-                    <div class="text-yellow-400 text-xs mt-1">★★★★★ <span class="text-gray-500 ml-1">4.8</span></div>
-                </div>
+            
+            <!-- Expert 2 -->
+            <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex flex-col items-center text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. James Wilson" class="w-20 h-20 rounded-full object-cover group-hover:ring-4 ring-purple-400 transition-all mb-4">
+                <h5 class="font-bold text-base text-gray-900 group-hover:text-purple-700 transition-colors">Dr. James Wilson</h5>
+                <p class="text-xs text-purple-600 font-semibold mb-2">Finance Expert</p>
+                <div class="text-yellow-400 text-xs mb-3">★★★★★ <span class="text-gray-500 ml-1">4.8</span></div>
+                <p class="text-xs text-gray-500 leading-relaxed mb-6">Expert in corporate finance, investment analysis, and auditing with a PhD in Financial Management.</p>
+                <a href="#" class="mt-auto w-full py-2 bg-purple-700 hover:bg-purple-800 text-white rounded-lg text-xs font-bold transition shadow-sm text-center">Hire Now &rarr;</a>
             </div>
-            <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex items-center gap-4 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
-                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Olivia Bennett" class="w-12 h-12 rounded-full object-cover group-hover:ring-2 ring-purple-400 transition-all">
-                <div>
-                    <h5 class="font-bold text-sm text-gray-900 group-hover:text-purple-700 transition-colors">Olivia Bennett</h5>
-                    <p class="text-xs text-gray-500">Management Expert</p>
-                    <div class="text-yellow-400 text-xs mt-1">★★★★★ <span class="text-gray-500 ml-1">4.9</span></div>
-                </div>
+            
+            <!-- Expert 3 -->
+            <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex flex-col items-center text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Olivia Bennett" class="w-20 h-20 rounded-full object-cover group-hover:ring-4 ring-purple-400 transition-all mb-4">
+                <h5 class="font-bold text-base text-gray-900 group-hover:text-purple-700 transition-colors">Olivia Bennett</h5>
+                <p class="text-xs text-purple-600 font-semibold mb-2">Management Expert</p>
+                <div class="text-yellow-400 text-xs mb-3">★★★★★ <span class="text-gray-500 ml-1">4.9</span></div>
+                <p class="text-xs text-gray-500 leading-relaxed mb-6">Focuses on strategic planning, organizational behavior, and HR management assignment guidance.</p>
+                <a href="#" class="mt-auto w-full py-2 bg-purple-700 hover:bg-purple-800 text-white rounded-lg text-xs font-bold transition shadow-sm text-center">Hire Now &rarr;</a>
             </div>
-            <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex items-center gap-4 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
-                <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Dr. Daniel Harris" class="w-12 h-12 rounded-full object-cover group-hover:ring-2 ring-purple-400 transition-all">
-                <div>
-                    <h5 class="font-bold text-sm text-gray-900 group-hover:text-purple-700 transition-colors">Dr. Daniel Harris</h5>
-                    <p class="text-xs text-gray-500">Economics Expert</p>
-                    <div class="text-yellow-400 text-xs mt-1">★★★★<span class="text-gray-300">★</span> <span class="text-gray-500 ml-1">4.7</span></div>
-                </div>
+            
+            <!-- Expert 4 -->
+            <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex flex-col items-center text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
+                <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Dr. Daniel Harris" class="w-20 h-20 rounded-full object-cover group-hover:ring-4 ring-purple-400 transition-all mb-4">
+                <h5 class="font-bold text-base text-gray-900 group-hover:text-purple-700 transition-colors">Dr. Daniel Harris</h5>
+                <p class="text-xs text-purple-600 font-semibold mb-2">Economics Expert</p>
+                <div class="text-yellow-400 text-xs mb-3">★★★★<span class="text-gray-300">★</span> <span class="text-gray-500 ml-1">4.7</span></div>
+                <p class="text-xs text-gray-500 leading-relaxed mb-6">Specializes in microeconomics, macroeconomics, and econometric modeling with over 8 years of mentoring.</p>
+                <a href="#" class="mt-auto w-full py-2 bg-purple-700 hover:bg-purple-800 text-white rounded-lg text-xs font-bold transition shadow-sm text-center">Hire Now &rarr;</a>
             </div>
-            <div class="bg-purple-50 p-4 rounded-xl border border-purple-100 shadow-sm flex items-center justify-center cursor-pointer hover:bg-purple-600 group transition-all duration-300 text-center hover:shadow-lg hover:-translate-y-1">
-                <a href="#" class="font-bold text-sm text-purple-700 group-hover:text-white transition-colors flex flex-col items-center">
-                    View All<br>Experts <span class="mt-1 group-hover:translate-x-1 transition-transform">&rarr;</span>
-                </a>
-            </div>
+        </div>
+        <div class="flex justify-center mt-8">
+            <a href="#" class="inline-flex items-center gap-2 bg-purple-50 hover:bg-purple-600 text-purple-700 hover:text-white border border-purple-100 px-6 py-3 rounded-lg font-bold text-sm transition-all duration-300 shadow-sm hover:shadow-md">
+                View All Experts &rarr;
+            </a>
         </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 md:pb-16">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-4 md:pb-8">
         <div class="bg-[#2d1b7a] rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between relative overflow-hidden text-white shadow-2xl">
             <!-- Stars -->
             <div class="absolute inset-0 pointer-events-none">
@@ -366,9 +373,108 @@
             </div>
         </div>
     </section>
+        <section class="py-4 md:py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-12 items-start">
+            <div class="lg:w-1/3">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-purple-100 text-purple-700 text-xs font-bold uppercase tracking-wide mb-4">
+                    Frequently Asked Questions
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4 leading-snug">Find Answers To <span class="text-purple-700">Common Questions</span></h2>
+                <p class="text-gray-500 text-sm leading-relaxed mb-6">If you have any other questions, feel free to contact our support team.</p>
+                <a href="#" class="inline-flex items-center justify-center bg-white border-2 border-purple-200 text-purple-700 font-bold px-6 py-3 rounded-lg hover:bg-purple-50 transition">
+                    Contact Us &rarr;
+                </a>
+            </div>
 
+            <div class="lg:w-2/3 w-full space-y-4">
+                <div class="faq-item bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-purple-200 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="faq-header flex items-center justify-between p-3 cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300 group-hover:rotate-12"><i class="fa-solid fa-certificate"></i></div>
+                            <span class="font-bold text-gray-900 text-sm md:text-base group-hover:text-purple-700 transition-colors">Is the work you provide 100% original?</span>
+                        </div>
+                        <svg class="w-5 h-5 text-gray-400 group-hover:text-purple-600 transition-transform duration-300 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="faq-answer hidden px-4 pb-4 pt-1 border-t border-gray-50">
+                        <p class="text-xs text-gray-500 leading-relaxed">Yes, all assignments we deliver are 100% original and written from scratch by our experts. We also provide a free plagiarism report to guarantee uniqueness.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-purple-200 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="faq-header flex items-center justify-between p-3 cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300 group-hover:rotate-12"><i class="fa-solid fa-cart-plus"></i></div>
+                            <span class="font-bold text-gray-900 text-sm md:text-base group-hover:text-purple-700 transition-colors">How do I place an order?</span>
+                        </div>
+                        <svg class="w-5 h-5 text-gray-400 group-hover:text-purple-600 transition-transform duration-300 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="faq-answer hidden px-4 pb-4 pt-1 border-t border-gray-50">
+                        <p class="text-xs text-gray-500 leading-relaxed">You can place an order by filling out our quick order/quote form, specifying your requirements, academic level, and deadline, or you can directly chat with us for assistance.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-purple-200 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="faq-header flex items-center justify-between p-3 cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300 group-hover:rotate-12"><i class="fa-solid fa-arrows-rotate"></i></div>
+                            <span class="font-bold text-gray-900 text-sm md:text-base group-hover:text-purple-700 transition-colors">Can I request revisions?</span>
+                        </div>
+                        <svg class="w-5 h-5 text-gray-400 group-hover:text-purple-600 transition-transform duration-300 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="faq-answer hidden px-4 pb-4 pt-1 border-t border-gray-50">
+                        <p class="text-xs text-gray-500 leading-relaxed">Absolutely! We offer unlimited free revisions within 14-30 days of delivery if the final document does not meet your initial requirements.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-purple-200 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="faq-header flex items-center justify-between p-3 cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300 group-hover:rotate-12"><i class="fa-solid fa-bolt"></i></div>
+                            <span class="font-bold text-gray-900 text-sm md:text-base group-hover:text-purple-700 transition-colors">What if I need my order urgently?</span>
+                        </div>
+                        <svg class="w-5 h-5 text-gray-400 group-hover:text-purple-600 transition-transform duration-300 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="faq-answer hidden px-4 pb-4 pt-1 border-t border-gray-50">
+                        <p class="text-xs text-gray-500 leading-relaxed">No problem! We have express experts who can tackle urgent tasks and deliver high-quality assignments in as little as 3 to 6 hours.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-purple-200 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="faq-header flex items-center justify-between p-3 cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300 group-hover:rotate-12"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                            <span class="font-bold text-gray-900 text-sm md:text-base group-hover:text-purple-700 transition-colors">Do you offer refunds?</span>
+                        </div>
+                        <svg class="w-5 h-5 text-gray-400 group-hover:text-purple-600 transition-transform duration-300 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="faq-answer hidden px-4 pb-4 pt-1 border-t border-gray-50">
+                        <p class="text-xs text-gray-500 leading-relaxed">Yes, we have a clear refund policy. If we fail to deliver within the deadline or if the work fails to meet acceptable academic standards, you can request a refund.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script>
     document.addEventListener("DOMContentLoaded", () => {
+        // FAQ Accordion logic
+        document.querySelectorAll('.faq-item').forEach(item => {
+            const header = item.querySelector('.faq-header');
+            header.addEventListener('click', () => {
+                const answer = item.querySelector('.faq-answer');
+                const icon = item.querySelector('.faq-icon');
+                const isHidden = answer.classList.contains('hidden');
+                
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    otherItem.querySelector('.faq-answer').classList.add('hidden');
+                    otherItem.querySelector('.faq-icon').classList.remove('rotate-180');
+                });
+                
+                if (isHidden) {
+                    answer.classList.remove('hidden');
+                    icon.classList.add('rotate-180');
+                } else {
+                    answer.classList.add('hidden');
+                    icon.classList.remove('rotate-180');
+                }
+            });
+        });
+
         const counters = document.querySelectorAll(".stat-counter");
         
         const animateCounter = (counter) => {
@@ -408,3 +514,4 @@
     </script>
 </main>
 @endsection
+

@@ -46,7 +46,7 @@
 <div class="font-sans text-[#111827]">
 
   <!-- HERO SECTION -->
-  <section class="bg-gradient-to-r from-white to-[white] pt-0 pb-6 lg:pb-12 relative overflow-hidden">
+  <section class="bg-gradient-to-r from-white to-[white] pt-0 pb-3 lg:pb-6 relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative">
@@ -304,7 +304,7 @@
 
       </div>
   <!-- Features Grid (Why Students Choose) -->
-  <section class="py-8 lg:py-12 bg-white">
+  <section class="py-4 lg:py-6 bg-white">
     <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-[22px] font-extrabold text-[#0f1b3d] text-center mb-5 mt-5">Why Students Choose Our Accounting Assignment Help?</h2>
       
@@ -381,7 +381,7 @@
   </section>
 
   <!-- EXPERTS SECTION -->
-  <section class="py-8 lg:py-16 bg-[white] ">
+  <section class="py-4 lg:py-8 bg-[white] ">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center mb-12 relative">
@@ -513,7 +513,7 @@
   </section>
 
   <!-- PROMO BANNER -->
-  <section class="py-8 lg:py-12 bg-white">
+  <section class="py-4 lg:py-6 bg-white">
     <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
       <div class="bg-gradient-to-br from-[#1a0b3f] to-[#3f159a] rounded-2xl overflow-hidden relative shadow-xl p-5 md:p-8 flex flex-col lg:flex-row lg:items-center lg:justify-between">
         
@@ -608,7 +608,7 @@
   </section>
 
   <!-- TESTIMONIALS SECTION -->
-  <section class="py-8 lg:py-16 bg-[white]">
+  <section class="py-4 lg:py-8 bg-[white]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center mb-16">
@@ -690,7 +690,7 @@
   </section>
 
   <!-- FEATURES DETAILED SECTION -->
-  <section class="py-8 lg:py-16 bg-white">
+  <section class="py-4 lg:py-8 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
       <h2 class="text-2xl lg:text-3xl font-extrabold text-[#0f1b3d] mb-6">Why Choose Accounting Assignment Help From Us?</h2>
       <p class="text-[13px] text-gray-600 leading-relaxed font-medium">
@@ -744,7 +744,7 @@
   </section>
 
   <!-- BOTTOM CTA BANNER -->
-  <section class="py-8 lg:py-16 bg-[white]">
+  <section class="py-4 lg:py-8 bg-[white]">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="bg-white shadow-[0_8px_30px_rgba(0,0,0,0.06)] rounded-3xl p-4 md:p-7 flex flex-col md:flex-row items-center justify-between">
         
@@ -770,7 +770,83 @@
       </div>
     </div>
   </section>
+      <section class="py-4 lg:py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-12 items-start">
+            <div class="lg:w-1/3">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-purple-100 text-purple-700 text-xs font-bold uppercase tracking-wide mb-4">
+                    Frequently Asked Questions
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4 leading-snug">Find Answers To <span class="text-purple-700">Common Questions</span></h2>
+                <p class="text-gray-500 text-sm leading-relaxed mb-6">If you have any other questions, feel free to contact our support team.</p>
+                <a href="#" class="inline-flex items-center justify-center bg-white border-2 border-purple-200 text-purple-700 font-bold px-6 py-3 rounded-lg hover:bg-purple-50 transition">
+                    Contact Us &rarr;
+                </a>
+            </div>
 
+            <div class="lg:w-2/3 w-full space-y-4">
+                <div class="faq-item bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-purple-200 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="faq-header flex items-center justify-between p-3 cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300 group-hover:rotate-12"><i class="fa-solid fa-certificate"></i></div>
+                            <span class="font-bold text-gray-900 text-sm md:text-base group-hover:text-purple-700 transition-colors">Is the work you provide 100% original?</span>
+                        </div>
+                        <svg class="w-5 h-5 text-gray-400 group-hover:text-purple-600 transition-transform duration-300 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="faq-answer hidden px-4 pb-4 pt-1 border-t border-gray-50">
+                        <p class="text-xs text-gray-500 leading-relaxed">Yes, all assignments we deliver are 100% original and written from scratch by our experts. We also provide a free plagiarism report to guarantee uniqueness.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-purple-200 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="faq-header flex items-center justify-between p-3 cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300 group-hover:rotate-12"><i class="fa-solid fa-cart-plus"></i></div>
+                            <span class="font-bold text-gray-900 text-sm md:text-base group-hover:text-purple-700 transition-colors">How do I place an order?</span>
+                        </div>
+                        <svg class="w-5 h-5 text-gray-400 group-hover:text-purple-600 transition-transform duration-300 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="faq-answer hidden px-4 pb-4 pt-1 border-t border-gray-50">
+                        <p class="text-xs text-gray-500 leading-relaxed">You can place an order by filling out our quick order/quote form, specifying your requirements, academic level, and deadline, or you can directly chat with us for assistance.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-purple-200 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="faq-header flex items-center justify-between p-3 cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300 group-hover:rotate-12"><i class="fa-solid fa-arrows-rotate"></i></div>
+                            <span class="font-bold text-gray-900 text-sm md:text-base group-hover:text-purple-700 transition-colors">Can I request revisions?</span>
+                        </div>
+                        <svg class="w-5 h-5 text-gray-400 group-hover:text-purple-600 transition-transform duration-300 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="faq-answer hidden px-4 pb-4 pt-1 border-t border-gray-50">
+                        <p class="text-xs text-gray-500 leading-relaxed">Absolutely! We offer unlimited free revisions within 14-30 days of delivery if the final document does not meet your initial requirements.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-purple-200 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="faq-header flex items-center justify-between p-3 cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300 group-hover:rotate-12"><i class="fa-solid fa-bolt"></i></div>
+                            <span class="font-bold text-gray-900 text-sm md:text-base group-hover:text-purple-700 transition-colors">What if I need my order urgently?</span>
+                        </div>
+                        <svg class="w-5 h-5 text-gray-400 group-hover:text-purple-600 transition-transform duration-300 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="faq-answer hidden px-4 pb-4 pt-1 border-t border-gray-50">
+                        <p class="text-xs text-gray-500 leading-relaxed">No problem! We have express experts who can tackle urgent tasks and deliver high-quality assignments in as little as 3 to 6 hours.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-purple-200 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="faq-header flex items-center justify-between p-3 cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300 group-hover:rotate-12"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                            <span class="font-bold text-gray-900 text-sm md:text-base group-hover:text-purple-700 transition-colors">Do you offer refunds?</span>
+                        </div>
+                        <svg class="w-5 h-5 text-gray-400 group-hover:text-purple-600 transition-transform duration-300 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="faq-answer hidden px-4 pb-4 pt-1 border-t border-gray-50">
+                        <p class="text-xs text-gray-500 leading-relaxed">Yes, we have a clear refund policy. If we fail to deliver within the deadline or if the work fails to meet acceptable academic standards, you can request a refund.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
 <!-- Toast notification -->
@@ -1034,6 +1110,29 @@
                     btnText.classList.remove("hidden");
                     spinner.classList.add("hidden");
                 });
+        });
+
+        // FAQ Accordion logic
+        document.querySelectorAll('.faq-item').forEach(item => {
+            const header = item.querySelector('.faq-header');
+            header.addEventListener('click', () => {
+                const answer = item.querySelector('.faq-answer');
+                const icon = item.querySelector('.faq-icon');
+                const isHidden = answer.classList.contains('hidden');
+                
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    otherItem.querySelector('.faq-answer').classList.add('hidden');
+                    otherItem.querySelector('.faq-icon').classList.remove('rotate-180');
+                });
+                
+                if (isHidden) {
+                    answer.classList.remove('hidden');
+                    icon.classList.add('rotate-180');
+                } else {
+                    answer.classList.add('hidden');
+                    icon.classList.remove('rotate-180');
+                }
+            });
         });
     });
 </script>
