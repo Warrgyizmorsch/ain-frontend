@@ -4,6 +4,7 @@ use App\Http\Controllers\MasterController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\WalletController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DynamicServicePageController;
 use Illuminate\Http\Request;
 
 use App\Http\Controllers\UserController;
@@ -850,23 +851,7 @@ Route::get('/business-assignment-writing-help', function () {
 //     return view('frontend.header.services.sub.engineering-assignment-writing-help', compact('data'));
 // });
 
-Route::get('/engineering-assignment-writing-help', function () {
-    $schemaService = new SchemaService();
-    $data = config('dataload.engineering-assignment-writing-help.meta');
-    $priceRanges = config('dataload.engineering-assignment-writing-help.price_ranges');
-    $data['schema'] = $schemaService->generateSchema($data['title'], $data['description'], $data['canonical'], $priceRanges);
-    $data['Faqschema'] = $schemaService->generateFaqSchema(config('dataload.engineering-assignment-writing-help.faqs'));
-    $data["sample"] = Sample::with('categotyData')
-        ->orderBy('created_at', 'desc') // Order by the most recent records
-        ->take(2) // Limit the results to 2 records
-        ->get();
-    $data['expert'] = Experts::
-        where('subject', 'Engineering')
-        ->distinct('service') // Avoid repeated subjects
-        ->take(10) // Limit to 10 experts
-        ->get();
-    return view('frontend.header.services.sub.nik-new-subject', compact('data'));
-});
+Route::get('/engineering-assignment-writing-help', [DynamicServicePageController::class, 'show']);
 
 // Demo route for renovated subject page
 // Route::get('/new-subjectpage', function () {
@@ -5310,3 +5295,8 @@ Route::get('/feedbacks', function () {
 });
 
 require __DIR__ . '/auth.php';
+
+// Keep this last: existing static routes win; published CMS slugs resolve dynamically.
+Route::get('/{slug}', [DynamicServicePageController::class, 'show'])
+    ->where('slug', '[a-z0-9-/]+')
+    ->name('dynamic-service-page');

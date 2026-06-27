@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /1008/
+    RewriteBase /ain-backend/
     # Disable MultiViews and Indexes
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
@@ -20,7 +20,7 @@
     RewriteCond %{HTTP_HOST} !^192\.168\.29\.101(:[0-9]+)?$ [NC]
     RewriteCond %{HTTPS} off [OR]
     RewriteCond %{HTTP_HOST} !^www\. [NC]
-    RewriteRule ^(.*)$ https://www.assignnmentinneed.com/$1 [L,R=301]
+    RewriteRule ^(.*)$ http://localhost:8000/$1 [L,R=301]
 
     # Remove trailing slashes
     RewriteCond %{REQUEST_FILENAME} !-d

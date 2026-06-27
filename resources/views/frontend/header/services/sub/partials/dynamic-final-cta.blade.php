@@ -1,0 +1,10 @@
+@if($page->cta_content || $page->cta_button_label)
+<section class="dsp4-final-cta"><div class="dsp-wrap"><div class="dsp4-cta-inner">
+    <div class="dsp4-cta-image"><img src="{{ asset('assets/media/avatars/books-with-graduation-cap-digital-art-style-education-day-removebg-preview.png') }}" alt="Academic assignment help"></div>
+    <p>{{ $page->cta_content }}</p>
+    @if($page->cta_button_label)<a href="{{ $page->cta_button_url ?: '/order-now' }}">{{ $page->cta_button_label }} <i class="fas fa-arrow-right"></i></a>@endif
+</div></div></section>
+@endif
+<style>
+.dsp>.dsp4-final-cta{order:7}.dsp4-final-cta{padding:10px 0 28px;background:#fff}.dsp4-cta-inner{min-height:88px;display:grid;grid-template-columns:235px 1fr 245px;align-items:center;gap:25px;overflow:hidden;border-radius:10px;padding:8px 26px;background:linear-gradient(100deg,#f7f3ff,#eee8ff);border:1px solid #eee7fb}.dsp4-cta-image{height:78px;display:flex;align-items:center;justify-content:center}.dsp4-cta-image img{display:block!important;width:auto!important;height:88px!important;max-width:190px!important;object-fit:contain!important;margin:0!important}.dsp4-cta-inner p{margin:0!important;color:#242942;font-size:13px!important;line-height:1.5!important;font-weight:600}.dsp4-cta-inner>a{display:flex;align-items:center;justify-content:center;gap:15px;min-height:48px;border-radius:7px;padding:12px 22px;background:linear-gradient(100deg,#5114d2,#4a12bc);color:#fff;text-decoration:none;font-size:13px;font-weight:800;box-shadow:0 7px 18px rgba(74,18,188,.2);transition:transform .25s,box-shadow .25s}.dsp4-cta-inner>a:hover{color:#fff;transform:translateY(-2px);box-shadow:0 10px 24px rgba(74,18,188,.3)}@media(max-width:850px){.dsp4-cta-inner{grid-template-columns:130px 1fr;padding:12px 18px}.dsp4-cta-inner>a{grid-column:1/-1}.dsp4-cta-image img{height:72px!important}.dsp4-cta-inner p{font-size:12px!important}}@media(max-width:520px){.dsp4-cta-inner{grid-template-columns:1fr;text-align:center}.dsp4-cta-inner>a{grid-column:auto}.dsp4-cta-image{height:65px}}
+</style>

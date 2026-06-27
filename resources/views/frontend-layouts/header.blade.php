@@ -6,12 +6,13 @@
     }
 
     .logo-box .logo img {
-        width: 70px !important;
+        width: 155px !important;
+        height: auto !important;
     }
 
     @media (max-width: 768px) {
         .logo-box .logo img {
-            width: 60px !important;
+            width: 125px !important;
         }
     }
 
@@ -781,7 +782,7 @@
                 <div class="inner-container" style="display: flex; align-items: center;">
 
                     <div class="logo-box">
-                        <div class="logo"><a href="/"><img src="/assets/media/layout/assignment_logo.webp"
+                        <div class="logo"><a href="/"><img src="/images/icons/Assignment-in-need.png"
                                     alt="assignment help services assignnmentinneed.com" title="" width="80px"></a>
                         </div>
                     </div>
@@ -1334,7 +1335,7 @@
                     <div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y"
                         style="position:relative; top:0; left:0;" dir="ltr">
                         <div class="nav-logo" style="height: 50px; text-align: center;"><a href="/"><img
-                                    src="/assets/media/layout/assignment_logo.webp"
+                                    src="/images/icons/Assignment-in-need.png"
                                     alt="assingment help assignnmentinneed.com" title="" class="mCS_img_loaded" width="60"></a></div>
                         <div class="menu-outer">
                             <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
