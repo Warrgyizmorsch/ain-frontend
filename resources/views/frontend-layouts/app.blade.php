@@ -328,7 +328,10 @@
     <!--<script src="https://www.google.com/recaptcha/api.js" defer></script>-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
     <script>
-        document.getElementById('orderForm').addEventListener('focusin', loadReCaptcha, { once: true });
+        const orderFormFocus = document.getElementById('orderForm');
+        if (orderFormFocus) {
+            orderFormFocus.addEventListener('focusin', loadReCaptcha, { once: true });
+        }
 
         function loadReCaptcha() {
             const script = document.createElement('script');
@@ -340,22 +343,25 @@
     </script>
 
     <script>
-        document.getElementById('orderForm').addEventListener('submit', function (event) {
-            event.preventDefault();
+        const orderFormSubmit = document.getElementById('orderForm');
+        if (orderFormSubmit) {
+            orderFormSubmit.addEventListener('submit', function (event) {
+                event.preventDefault();
 
-            var recaptchaResponse = grecaptcha.getResponse();
-            if (!recaptchaResponse) {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Please complete the reCAPTCHA.',
-                });
-                return false;
-            }
+                var recaptchaResponse = grecaptcha.getResponse();
+                if (!recaptchaResponse) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Please complete the reCAPTCHA.',
+                    });
+                    return false;
+                }
 
-            // If reCAPTCHA is completed, allow form submission
-            this.submit();
-        });
+                // If reCAPTCHA is completed, allow form submission
+                this.submit();
+            });
+        }
     </script>
     <script>
         $(function () {

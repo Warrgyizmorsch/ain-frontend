@@ -123,7 +123,7 @@
 
         <div class="znh-form-group-full">
             <label>Email Address</label>
-            <input type="email" name="email" required placeholder="Enter your email">
+            <input type="email" name="email" id="znh-hero-email" required placeholder="Enter your email">
         </div>
 
         <!-- Hidden inputs required by placeNewOrder -->
@@ -174,6 +174,27 @@
         }
     }
     initSelect2();
+
+    // Restrict invalid characters from email field in real-time (bulletproof validation)
+    function initEmailRestriction() {
+        const emailInput = document.getElementById('znh-hero-email');
+        if (emailInput) {
+            const filterInput = function() {
+                this.value = this.value.replace(/[^a-zA-Z0-9@._+-]/g, '');
+            };
+            emailInput.addEventListener('input', filterInput);
+            emailInput.addEventListener('keyup', filterInput);
+            emailInput.addEventListener('change', filterInput);
+            emailInput.addEventListener('paste', function() {
+                setTimeout(() => {
+                    this.value = this.value.replace(/[^a-zA-Z0-9@._+-]/g, '');
+                }, 0);
+            });
+        } else {
+            setTimeout(initEmailRestriction, 100);
+        }
+    }
+    initEmailRestriction();
 </script>
 
 <style>

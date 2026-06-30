@@ -943,7 +943,7 @@
                                 required></textarea>
                         </div>
 
-                        <div class="form-field">
+                        <!-- <div class="form-field">
                             <label for="fileUpload" class="custom-file-upload">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2">
@@ -961,7 +961,7 @@
                                 var fileName = event.target.files.length > 0 ? event.target.files[0].name : 'Drop file here or Click to upload';
                                 document.querySelector('.upload-text').textContent = fileName;
                             });
-                        </script>
+                        </script> -->
 
                         <input type="hidden" name="estimatedPrice" id="estimatedPrice" value="">
                         <input type="hidden" name="discount" id="discount" value="">
@@ -1122,30 +1122,32 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var phoneInput = document.querySelector("#phone_number_input");
-        var phoneInputInstance = window.intlTelInput(phoneInput, {
-            separateDialCode: true,
-            preferredCountries: ["gb"],
-            utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
-        });
+        if (phoneInput) {
+            var phoneInputInstance = window.intlTelInput(phoneInput, {
+                separateDialCode: true,
+                preferredCountries: ["gb"],
+                utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
+            });
 
-        function updatePhoneNumber() {
-            var fullNumber = phoneInputInstance.getNumber();
-            var countryData = phoneInputInstance.getSelectedCountryData();
-            var countryCode = countryData.dialCode;
+            function updatePhoneNumber() {
+                var fullNumber = phoneInputInstance.getNumber();
+                var countryData = phoneInputInstance.getSelectedCountryData();
+                var countryCode = countryData.dialCode;
 
-            document.querySelector("#hidden_phone_number").value = fullNumber;
-            document.querySelector("#hidden_country_code").value = countryCode;
+                document.querySelector("#hidden_phone_number").value = fullNumber;
+                document.querySelector("#hidden_country_code").value = countryCode;
+            }
+
+            updatePhoneNumber();
+
+            phoneInput.addEventListener('input', function() {
+                updatePhoneNumber();
+            });
+
+            phoneInput.addEventListener('countrychange', function() {
+                updatePhoneNumber();
+            });
         }
-
-        updatePhoneNumber();
-
-        phoneInput.addEventListener('input', function() {
-            updatePhoneNumber();
-        });
-
-        phoneInput.addEventListener('countrychange', function() {
-            updatePhoneNumber();
-        });
     });
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
@@ -1190,6 +1192,10 @@
             var decryptedPrice = decryptData(encryptedPrice);
             var decryptedBasePrice = decryptData(encryptedBasePrice);
             var decryptedDiscount = decryptData(encryptedDiscount);
+            
+            // Define missing decryption variables to prevent ReferenceErrors
+            var decryptedTopic = '';
+            var decryptedRequirements = '';
 
             // Populate form with decrypted data
             function populateFormWithDecryptedData() {
@@ -1443,6 +1449,47 @@
             }
         });
     });
+</script>
+
+<script>
+    function initFormRestrictions() {
+        const form = document.getElementById('placeOrder');
+        if (form) {
+            const bindFilter = function(inputEl, regex) {
+                if (!inputEl) return;
+                const filter = function() {
+                    this.value = this.value.replace(regex, '');
+                };
+                inputEl.addEventListener('input', filter);
+                inputEl.addEventListener('keyup', filter);
+                inputEl.addEventListener('change', filter);
+                inputEl.addEventListener('paste', function() {
+                    setTimeout(() => { this.value = this.value.replace(regex, ''); }, 0);
+                });
+            };
+
+            // 1. Name Input: Only allow letters and spaces (absolutely no special characters/digits)
+            bindFilter(form.querySelector('input[name="name"]'), /[^a-zA-Z\s]/g);
+
+            // 2. Email Input: Only allow standard email characters
+            bindFilter(form.querySelector('input[name="email"]'), /[^a-zA-Z0-9@._+-]/g);
+
+            // 3. Mobile Input: Only allow digits
+            bindFilter(document.getElementById('phone_number_input'), /[^0-9]/g);
+
+            // 4. Word Count Input: Only allow digits
+            bindFilter(document.getElementById('wordCount'), /[^0-9]/g);
+
+            // 5. Topic Input: Only allow letters, numbers, spaces, dots, commas, hyphens (blocks < > / ? ; : ' " \ etc.)
+            bindFilter(document.getElementById('enterTopic'), /[^a-zA-Z0-9\s.,-]/g);
+
+            // 6. Requirements Input: Block HTML/scripting and other dangerous special characters (< > / ? ; : ' " \ etc.)
+            bindFilter(document.getElementById('requirements'), /[<>\/?[\]{}|\\;:'"`~^+=*]/g);
+        } else {
+            setTimeout(initFormRestrictions, 100);
+        }
+    }
+    initFormRestrictions();
 </script>
 
 @endsection

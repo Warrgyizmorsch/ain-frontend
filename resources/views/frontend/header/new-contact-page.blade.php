@@ -969,4 +969,40 @@
             </div>
         </div>
     </div>
+
+<script>
+    function initContactFormRestrictions() {
+        const form = document.querySelector('.znw-contact-right form');
+        if (form) {
+            const bindFilter = function(inputEl, regex) {
+                if (!inputEl) return;
+                const filter = function() {
+                    this.value = this.value.replace(regex, '');
+                };
+                inputEl.addEventListener('input', filter);
+                inputEl.addEventListener('keyup', filter);
+                inputEl.addEventListener('change', filter);
+                inputEl.addEventListener('paste', function() {
+                    setTimeout(() => { this.value = this.value.replace(regex, ''); }, 0);
+                });
+            };
+
+            // 1. Full Name: Only allow letters and spaces
+            bindFilter(form.querySelector('input[name="name"]'), /[^a-zA-Z\s]/g);
+
+            // 2. Email Address: Only allow standard email characters
+            bindFilter(form.querySelector('input[name="email"]'), /[^a-zA-Z0-9@._+-]/g);
+
+            // 3. Phone Number: Only allow digits
+            bindFilter(form.querySelector('input[name="mobile"]'), /[^0-9]/g);
+
+            // 4. Message: Block HTML/scripting and other dangerous special characters (< > / ? ; : ' " \ etc.)
+            bindFilter(form.querySelector('textarea[name="message"]'), /[<>\/?[\]{}|\\;:'"`~^+=*]/g);
+        } else {
+            setTimeout(initContactFormRestrictions, 100);
+        }
+    }
+    initContactFormRestrictions();
+</script>
+
 @endsection
