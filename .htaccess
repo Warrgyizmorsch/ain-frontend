@@ -1,26 +1,23 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /ain-backend/
+    RewriteBase /
+
     # Disable MultiViews and Indexes
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
     </IfModule>
 
-    # Block access to /public
-    RewriteCond %{REQUEST_URI} ^/public [NC]
-    RewriteRule .* - [R=404,L]
-
     # Preserve Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
-    # -----------------------------
-    # SKIP HTTPS + WWW FOR LOCAL IP
-    # -----------------------------
-    RewriteCond %{HTTP_HOST} !^192\.168\.29\.101(:[0-9]+)?$ [NC]
-    RewriteCond %{HTTPS} off [OR]
-    RewriteCond %{HTTP_HOST} !^www\. [NC]
-    RewriteRule ^(.*)$ http://localhost:8000/$1 [L,R=301]
+    # Force HTTPS on live domain.
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Block direct access to sensitive Laravel files/folders.
+    RewriteRule ^(\.env|composer\.(json|lock)|package(-lock)?\.json|artisan|server\.php)$ - [F,L,NC]
+    RewriteRule ^(app|bootstrap|config|database|resources|routes|storage|tests|vendor)(/|$) - [F,L,NC]
 
     # Remove trailing slashes
     RewriteCond %{REQUEST_FILENAME} !-d
