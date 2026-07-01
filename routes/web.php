@@ -33,9 +33,9 @@ use Illuminate\Support\Facades\DB;
 
 Route::post('/takeover-confirm', [AuthenticatedSessionController::class, 'doTakeover'])->name('do-takeover');
 
-Route::get('/new-home', function () {
-    return view('components.common-section.new-home-page');
-});
+// Route::get('/new-home', function () {
+//     return view('components.common-section.new-home-page');
+// });
 
 Route::get('/load-more-blogs', [BlogController::class, 'loadMore']);
 Route::post('/contact-us/submit', [ContactController::class, 'submit'])->name('contact.submit');
@@ -150,7 +150,7 @@ Route::get('/', function () {
     $data['review'] = Review::orderBy('created_at', 'desc')->take(10)->get();
     $data = array_merge($cached, $data);
 
-    return view('home.index', compact('data'));
+    return view('components.common-section.new-home-page', compact('data'));
 });
 
 // Route::get('/', function () {
