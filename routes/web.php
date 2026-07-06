@@ -150,7 +150,8 @@ Route::get('/', function () {
     $data['review'] = Review::orderBy('created_at', 'desc')->take(10)->get();
     $data = array_merge($cached, $data);
 
-    return view('components.common-section.new-home-page', compact('data'));
+    // return view('components.common-section.new-home-page', compact('data'));
+    return view('home.index', compact('data'));
 });
 
 // Route::get('/', function () {
