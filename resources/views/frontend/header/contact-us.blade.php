@@ -285,7 +285,7 @@
             </div>
             <div class="icon-item">
                 <img src="/images2/personal-data.png" alt="Free CV" />
-                <p>Free CV on Every Order</p>
+                <p>Free CV on Every Order</p>   
             </div>
             <div class="icon-item">
                 <img src="/images2/24-hours.png" alt="24/7 Availability" />
